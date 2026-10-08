@@ -5,7 +5,7 @@
     <div>
         <div>
             <div><p>Diseñador Gráfico</p></div>
-            <div><p>Diseño piezas con proposito</p></div>
+            <div><p>Diseño piezas con propósito y construyo universos de marca sólidos, combiando creatividad, estrategia y coherencia en cada detalle </p></div>
         </div>
         <div>
             <img src="" alt="">
