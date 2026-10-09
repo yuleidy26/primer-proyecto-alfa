@@ -1,6 +1,6 @@
 <script lang="ts">
 	import favicon from '#lib/assets/favicon.svg';
-
+import Icon from "@iconify/svelte";
 	let { children } = $props();
 </script>
 
@@ -45,7 +45,7 @@
 
         <div>
             <a href="https://www.instagram.com/artby_yul/">
-                <img src="" alt="Instagram">
+                <Icon icon="akar-icons:instagram-fill" width="32" />
             </a>
             <a href="https://www.behance.net/yuleidyamaya">
                 <img src="" alt="Behance">
