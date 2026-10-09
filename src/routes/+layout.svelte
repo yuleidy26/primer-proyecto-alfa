@@ -32,10 +32,10 @@ import Icon from "@iconify/svelte";
         </div>
 
         <div>
-            <a href="/">Inicio</a>
-            <a href="/about-me">Sobre mí</a>
-            <a href="/project">Proyectos</a>
-            <a href="/contact">Contacto</a>
+            <a href="#Inicio">Inicio</a>
+            <a href="#Sobre-mi">Sobre mí</a>
+            <a href="#Proyectos">Proyectos</a>
+            <a href="#Contacto">Contacto</a>
         </div>
     </div>
 
@@ -48,13 +48,14 @@ import Icon from "@iconify/svelte";
                 <Icon icon="akar-icons:instagram-fill" width="32" />
             </a>
             <a href="https://www.behance.net/yuleidyamaya">
-                <img src="" alt="Behance">
+                <Icon icon="akar-icons:behance-fill" width="32" />
             </a>
             <a href="https://www.linkedin.com/in/yuleidyamaya">
-                <img src="" alt="linkedin">
+                <Icon icon="akar-icons:linkedin-fill" width="32" />
             </a>
             <a href="https://wa.me/1234567890">
-                <img src="" alt="whatsapp">
+                <Icon icon="akar-icons:whatsapp-fill" width="32" />
+
             </a>
         </div>
     </div>
