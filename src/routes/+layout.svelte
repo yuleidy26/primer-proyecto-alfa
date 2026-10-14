@@ -9,15 +9,15 @@ import "../app.css";
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<header>
+<header class="flex justify-between px-10 py-5">
     <div>
-        <p>Yuleidy Amaya - Portafolio</p>
+        <p class="uppercase">Yuleidy Amaya - Portafolio</p>
     </div>
-    <div>
+    <div class="flex gap-10 uppercase">
       <a href="#Inicio">Inicio</a>
-       <a href="#Sobre-mi">Sobre mi</a>
+       <a href="#Sobre-mi">Sobre mí</a>
         <a href="#Proyectos">Proyectos</a>
-         <a href="#Contacto">contacto</a>
+         <a href="#Contacto">Contacto</a>
     </div>
 </header>
 
