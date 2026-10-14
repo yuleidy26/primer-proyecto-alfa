@@ -1,24 +1,28 @@
 <script>
   import Icon from '@iconify/svelte';
 </script>
-<section>
+<section class="bg-indigo-700 text-white  px-10 py-10">
     <div>
-        <p>VALENCIA,VENEZUELA</p>
+        <p class="flex justify-end text-xs">VALENCIA, VENEZUELA</p>
     </div>
-    <div>
-        <div>
-            <div><p>Diseñador Gráfico</p></div>
-            <div><p>Diseño piezas con propósito y construyo universos de marca sólidos, combiando creatividad, estrategia y coherencia en cada detalle </p></div>
-        </div>
-        <div>
-            <img src="/logo.webp" alt="avatar de Yuleidy Amaya"width="500" />
-        </div>
-        <div><p>YULEIDY <br> AMAYA</p>
+
+    <div class="flex justify-center items-center gap-20">
+        <div class="flex-1">
+            <div><p class="text-3xl">Diseñador Gráfico</p></div>
+            <div><p class="text-xs font-light">Diseño piezas con propósito y construyo universos de marca sólidos, combiando creatividad, estrategia y coherencia en cada detalle </p></div>
         </div>
 
+        <div class="w-46 rounded-full overflow-hidden">
+            <img src="/logo.webp" alt="avatar de Yuleidy Amaya"/>
+        </div>
+
+        <div class="flex-1 text-5xl text-right">
+            <p>YULEIDY <br> AMAYA</p>
+        </div>
     </div>
+
     <div>
-    <button>descubir proyectos</button>
+    <button class="uppercase text-xs">descubir proyectos</button>
     </div>
 </section>
 
