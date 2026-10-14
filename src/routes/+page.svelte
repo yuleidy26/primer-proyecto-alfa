@@ -1,15 +1,19 @@
 <script>
   import Icon from '@iconify/svelte';
 </script>
+
+
 <section class="bg-indigo-700 text-white  px-10 py-10">
+
     <div>
         <p class="flex justify-end text-xs">VALENCIA, VENEZUELA</p>
     </div>
 
     <div class="flex justify-center items-center gap-20">
-        <div class="flex-1">
-            <div><p class="text-3xl">Diseñador Gráfico</p></div>
-            <div><p class="text-xs font-light">Diseño piezas con propósito y construyo universos de marca sólidos, combiando creatividad, estrategia y coherencia en cada detalle </p></div>
+
+        <div class="flex-1 flex flex-col gap-3">
+            <div><p class="text-3xl">Diseñadora Gráfica</p></div>
+            <div><p class="text-xs font-light">Diseño piezas con propósito y construyo universos de <br> marca sólidos, combiando creatividad, estrategia y <br> coherencia en cada detalle </p></div>
         </div>
 
         <div class="w-46 rounded-full overflow-hidden">
@@ -19,12 +23,15 @@
         <div class="flex-1 text-5xl text-right">
             <p>YULEIDY <br> AMAYA</p>
         </div>
+
     </div>
 
     <div>
     <button class="uppercase text-xs">descubir proyectos</button>
     </div>
+
 </section>
+
 
 <section>
     <!-- Cuadro superior naranja -->
