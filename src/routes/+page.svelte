@@ -20,7 +20,7 @@
             <img src="/logo.webp" alt="avatar de Yuleidy Amaya"/>
         </div>
 
-        <div class="flex-1 text-8xl text-right">
+        <div class="flex-1 text-8xl text-right font-playfair font-bold">
             <p>YULEIDY <br> AMAYA</p>
         </div>
 
