@@ -11,9 +11,9 @@ import "../app.css";
 
 <header class="flex justify-between px-10 py-5">
     <div>
-        <p class="uppercase">Yuleidy Amaya - Portafolio</p>
+        <p class="uppercase font-semibold">Yuleidy Amaya - Portafolio</p>
     </div>
-    <div class="flex gap-10 uppercase">
+    <div class="flex gap-10 uppercase font-semibold">
       <a href="#Inicio">Inicio</a>
        <a href="#Sobre-mi">Sobre mí</a>
         <a href="#Proyectos">Proyectos</a>
