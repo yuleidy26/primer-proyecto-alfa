@@ -3,7 +3,7 @@
 </script>
 
 
-<section class="bg-indigo-700 text-white  px-10 py-10">
+<section class="bg-indigo-700 text-white  px-10 py-10 gap-28 flex flex-col">
 
     <div>
         <p class="flex justify-end text-xs">VALENCIA, VENEZUELA</p>
