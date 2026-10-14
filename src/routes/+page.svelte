@@ -3,7 +3,7 @@
 </script>
 
 
-<section class="bg-indigo-700 text-white  px-10 py-10 gap-28 flex flex-col">
+<section class="bg-indigo-600 text-white  px-10 py-10 gap-40 flex flex-col">
 
     <div>
         <p class="flex justify-end text-xs">VALENCIA, VENEZUELA</p>
@@ -12,7 +12,7 @@
     <div class="flex justify-center items-center gap-20">
 
         <div class="flex-1 flex flex-col gap-3">
-            <div><p class="text-3xl">Diseñadora Gráfica</p></div>
+            <div><p class="text-3xl">Diseño Gráfico e <br> Identidad Visual</p></div>
             <div><p class="text-xs font-light">Diseño piezas con propósito y construyo universos de <br> marca sólidos, combiando creatividad, estrategia y <br> coherencia en cada detalle </p></div>
         </div>
 
@@ -20,7 +20,7 @@
             <img src="/logo.webp" alt="avatar de Yuleidy Amaya"/>
         </div>
 
-        <div class="flex-1 text-5xl text-right">
+        <div class="flex-1 text-8xl text-right">
             <p>YULEIDY <br> AMAYA</p>
         </div>
 
