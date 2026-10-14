@@ -12,11 +12,11 @@
     <div class="flex justify-center items-center gap-20">
 
         <div class="flex-1 flex flex-col gap-3">
-            <div><p class="text-3xl">Diseño Gráfico e <br> Identidad Visual</p></div>
+            <div><p class="text-4xl">Diseño Gráfico e <br> Identidad Visual</p></div>
             <div><p class="text-xs font-light">Diseño piezas con propósito y construyo universos de <br> marca sólidos, combiando creatividad, estrategia y <br> coherencia en cada detalle </p></div>
         </div>
 
-        <div class="w-46 rounded-full overflow-hidden">
+        <div class="w-56 rounded-full overflow-hidden">
             <img src="/logo.webp" alt="avatar de Yuleidy Amaya"/>
         </div>
 
