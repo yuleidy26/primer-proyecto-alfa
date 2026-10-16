@@ -1,4 +1,5 @@
 <script>
+    import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   import Icon from '@iconify/svelte';
 </script>
 
@@ -114,5 +115,11 @@
      </div>
 
     
+</section>
+
+<section>
+
+<div class="grid grid"><Tarjetainformacion /></div>
+
 </section>
 

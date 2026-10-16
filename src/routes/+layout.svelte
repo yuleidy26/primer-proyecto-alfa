@@ -24,7 +24,7 @@ import "../app.css";
 
 {@render children()}
 
-<footer class="bg-indigo-600 text-bg-indigo-600 text-white  px-10 py-10 gap-40">
+<footer class="bg-indigo-600 text-bg-indigo-600 text-white  px-5 py-5 gap-40">
     <!-- Parte superior -->
     <div>
         <div>
@@ -32,7 +32,7 @@ import "../app.css";
             <p class="text-xs font-plusjack font-light">Diseño visual. Dirección de Arte e identidad de marca</p>
         </div>
 
-        <div class="flex justify-end gap-10">
+        <div class="flex justify-end gap-10 uppercase font-plusjack font-light text-xs">
             <a href="#Inicio">Inicio</a>
             <a href="#Sobre-mi">Sobre mí</a>
             <a href="#Proyectos">Proyectos</a>
@@ -42,9 +42,9 @@ import "../app.css";
 
     <!-- Parte Inferior -->
     <div class="flex justify-between">
-        <div class="text-xs font-plusjack font-light">© 2026 Yuleidy Amaya. Todos los derechos reservados.</div>
+        <div class="text-xs font-plusjack font-light">©2026 Yuleidy Amaya. Todos los derechos reservados.</div>
 
-        <div class="flex gap-2">
+        <div class="flex gap-4">
             <a href="https://www.instagram.com/artby_yul/">
                 <Icon icon="akar-icons:instagram-fill" width="32" />
             </a>
