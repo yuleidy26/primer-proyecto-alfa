@@ -4,22 +4,37 @@
 </script>
 
 
-<section class="bg-indigo-600 text-white  px-10 py-10 gap-40 flex flex-col">
+<section class="relative bg-blue-600 text-white px-12 py-12 min-h-[85vh] flex flex-col justify-between overflow-hidden">
 
-    <div>
-        <p class="flex justify-end text-xs">VALENCIA, VENEZUELA</p>
+<!-- Texto Gigante de Fondo (Marca de Agua) -->
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0">
+    <span class="text-[22vw] font-bold text-blue-500/30 tracking-widest font-playfair">
+      2026
+    </span>
+  </div>
+
+    <div class="flex justify-end text-xs tracking-wider z-10">
+        <p>VALENCIA, VENEZUELA</p>
     </div>
 
-    <div class="flex justify-center items-center gap-20">
+  <!-- Bloque Central (3 Columnas) -->
+  <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-8 my-auto z-10">
+    
+    <!-- Columna 1: Título y Bajada -->
+    <div class="flex flex-col gap-4">
+      <h1 class="text-4xl lg:text-5xl font-playfair font-normal leading-tight">
+        Diseño Gráfico e <br>Identidad Visual
+      </h1>
+      <p class="text-xs font-plusjack font-light max-w-sm leading-relaxed text-blue-100">
+        Diseño piezas con propósito y construyo universos de marca sólidos, combinando creatividad, estrategia y coherencia en cada detalle
+      </p>
+    </div>
 
-        <div class="flex-1 flex flex-col gap-3">
-            <div><p class="text-4xl">Diseño Gráfico e <br> Identidad Visual</p></div>
-            <div><p class="text-xs font-light">Diseño piezas con propósito y construyo universos de <br> marca sólidos, combiando creatividad, estrategia y <br> coherencia en cada detalle </p></div>
-        </div>
-
-        <div class="w-56 rounded-full overflow-hidden">
-            <img src="/logo.webp" alt="avatar de Yuleidy Amaya"/>
-        </div>
+      <div class="flex justify-center">
+      <div class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden bg-white flex items-center justify-center shadow-lg">
+        <img src="/logo.webp" alt="Avatar de Yuleidy Amaya" class="w-full h-full object-cover" />
+      </div>
+    </div>
 
         <div class="flex-1 text-8xl text-right font-playfair font-bold">
             <p>YULEIDY <br> AMAYA</p>
@@ -27,14 +42,16 @@
 
     </div>
 
-    <div>
-    <button class="uppercase text-xs">descubir proyectos</button>
-    </div>
+    <div class="z-10 mt-6">
+    <a href="#proyectos" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider font-medium hover:underline">
+      DESCUBRIR PROYECTOS <span class="text-base">↓</span>
+    </a>
+  </div>
 
 </section>
 
-
-<section>
+<!-- Sección Sobre Mí -->
+<section class="bg-[#FCF8FE] text-slate-900 px-12 py-12">
     <!-- Cuadro superior naranja -->
      <div>
 
