@@ -51,83 +51,123 @@
 </section>
 
 <!-- Sección Sobre Mí -->
-<section class="bg-[#FCF8FE] text-slate-900 px-12 py-12">
+<section class="bg-[#FCF8FE] text-slate-900 px-12 py-24">
     <!-- Cuadro superior naranja -->
-     <div>
+     <div class="max-w-5xl flex flex-col gap-6 ">
 
-       <div><p> SOBRE MÍ</p></div>
+       <div class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider"> SOBRE MÍ</div>
 
-       <div><p>Filosofía de Diseño & Enfoque de Marca</p></div>
+       <!-- Título Principal -->
+    <h2 class="text-5xl lg:text-6xl font-playfair font-semibold leading-tight">
+      Filosofía de Diseño & <span class="text-[#0039C6] italic">Enfoque</span><br> de Marca
+    </h2>
 
-       <div><p>Me apasiona el diseño de identidades visuales, buscando siempre el equilibrio entre lo funcional y
-            lo creativo. Mi objetivo es transformar conceptos en piezas gráficas estratégicas que potencien la
+       <div class="font-plusjack leading-relaxed text-[#434656] text-sm md:text-base max-w-3xl">
+         <p>Me apasiona el diseño de identidades visuales, buscando siempre el equilibrio entre lo funcional y <br>
+            lo creativo. Mi objetivo es transformar conceptos en piezas gráficas estratégicas que potencien la <br>
             presencia de una marca tanto en plataformas digitales como en medios impresos tradicionales.</p>
         </div>
 
      </div>
 
-    <!-- cuadro inferior naranja  -->
-     <div>
+    <!-- cuadro inferior naranja (contenedor padre) -->
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-        <!-- cuadro verde izquierdo -->
-        <div>
-            <div>
-                <p>SOFTWARE & HERRAMIENTAS DE DISEÑO</p>
+        <!-- cuadro azul izquierdo -->
+        <div class="flex flex-col gap-4">
+        <!-- cuadro verde 1 titulo-->
+         <h3 class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
+            SOFTWARE & HERRAMIENTAS DE DISEÑO
+        </h3>
+
+        <!-- cuadro verde 2 programas -->
+        <div class="flex flex-col gap-4"> 
+            
+            <!-- cuadro rosa 1 ilustraitor -->
+
+            <div class="flex items-center gap-4 py-4 border-b border-slate-200">
+
+                <div>
+                    <Icon icon="basil:adobe-illustrator-solid" width="36" class="text-amber-700" />
+                </div> 
+
+                <div>
+                    <p class="font-semibold text-sm">Adobe Illustrator</p>
+                    <p class="text-xs text-slate-500 font-plusjack">DISEÑO VECTORIAL & MARCAS</p>
+                </div>
+
             </div>
 
-            <div>
-                <Icon icon="basil:adobe-illustrator-solid"  width="32" />
-                <p>Adobe Illustrator</p> <p>DISEÑO VECTORIAL & MARCAS</p>
+            <!-- cuadro rosa 2 photoshop -->
+
+            <div class="flex items-center gap-4 py-4 border-b border-slate-200">
+
+                <div>
+                    <Icon icon="basil:adobe-photoshop-solid" width="36" class="text-amber-700" />
+                </div> 
+
+                <div>
+                    <p class="font-semibold text-sm">Adobe Photoshop</p>
+                    <p class="text-xs text-slate-500 font-plusjack">EDICIÓN & FOTOMONTAJE</p>
+                </div>
+
             </div>
 
-            <div>
-                <Icon icon="basil:adobe-photoshop-solid"  width="32" />
-                <p>Adobe Photoshop</p> <p>EDICIÓN & FOTOMONTAJE</p>
+
+            <!-- cuadro rosa 3 canva -->
+
+            <div class="flex items-center gap-4 py-4 border-b border-slate-200">
+
+                <div>
+                    <Icon icon="thesvg-color:canva" width="36"/>
+                </div> 
+
+                <div>
+                    <p class="font-semibold text-sm">Canva</p>
+                    <p class="text-xs text-slate-500 font-plusjack">PIEZAS DIGITALES & REDES</p>
+                </div>
+
             </div>
 
-            <div>
-                <Icon icon="thesvg-color:canva" width="32" />
-                <p>Canva</p> <p>PIEZAS DIGITALES & REDES</p>
-            </div>
-
-        </div>
+         </div>
       
-        <!-- cuadro verde derecho -->
-        <div> 
-            <div>
-                <p>FORMACIÓN & CERTIFICACIONES</p>
-            </div>
-            <!-- curso 1 --> 
-             <div>
-                <div>
-                    <p>Curso Premium de Diseño Gráfico</p>
-                    <p>INSTITUTO ALFA CARABOBO</p>
-                </div>
-                <div>
-                    <p>2026</p>
-                </div>
-             </div>
-            <!-- curso 2 -->
-             <div>
-                <div>
-                    <p>Técnicas de Ilustración</p>
-                    <p>ACADEMIA LUMINA</p>
-                </div>
-                <div>
-                    <p>2026</p>
-                </div>
-             </div>
-            <!-- curso 3 -->
-             <div>
-                <div>
-                    <p>Programación Web</p>
-                    <p>INSTITUTO ALFA CARABOBO</p>
-                </div>
-                <div><p>EN CURSO</p></div>
-             </div>
+        </div>
 
+        <!-- cuadro azul derecho -->
+          <div class="flex flex-col gap-4">
+         <!-- cuadro verde 1 -->
+            <h3 class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
+                FORMACIÓN Y CERTIFICACIONES
+                
+            </h3>
+            <!-- cuadro verde 2 -->
+             <div class="flex flex-col gap-4"> 
+
+                <!-- cuadro rosa 1 -->
+
+                <div class="gap-4 py-4 border-b border-slate-200">
+                    <p class="font-semibold text-sm">Curso Premium de Diseño Gráfico</p>
+                    <p class="text-xs text-slate-500 font-plusjack">INSTITUTO ALFA CARABOBO</p>
+                </div>
+
+                 <!-- cuadro rosa 2 -->
+                 
+                <div class="gap-4 py-4 border-b border-slate-200">
+                    <p class="font-semibold text-sm">Técnicas de Ilustración</p>
+                    <p class="text-xs text-slate-500 font-plusjack">INSTITUTO ALFA CARABOBO</p>
+                </div>
+
+                 <!-- cuadro rosa 3-->
+                 
+                <div class="gap-4 py-4 border-b border-slate-200">
+                    <p class="font-semibold text-sm">Diseño Gráfico</p>
+                    <p class="text-xs text-slate-500 font-plusjack">INSTITUTO ALFA CARABOBO</p>
+                </div>
+
+            </div>
 
         </div>
+           
 
      </div>
 
