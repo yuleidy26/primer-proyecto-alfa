@@ -71,12 +71,12 @@
      </div>
 
     <!-- cuadro inferior naranja (contenedor padre) -->
-     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
 
         <!-- cuadro azul izquierdo -->
         <div class="flex flex-col gap-4">
         <!-- cuadro verde 1 titulo-->
-         <h3 class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
+         <h3 class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider border-b border-slate-200 pb-4">
             SOFTWARE & HERRAMIENTAS DE DISEÑO
         </h3>
 
@@ -136,7 +136,7 @@
         <!-- cuadro azul derecho -->
           <div class="flex flex-col gap-4">
          <!-- cuadro verde 1 -->
-            <h3 class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
+            <h3 class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider border-b border-slate-200 pb-4">
                 FORMACIÓN Y CERTIFICACIONES
                 
             </h3>
@@ -144,24 +144,39 @@
              <div class="flex flex-col gap-4"> 
 
                 <!-- cuadro rosa 1 -->
+                 <div class="flex justify-between items-start py-4 border-b border-slate-200">
 
-                <div class="gap-4 py-4 border-b border-slate-200">
-                    <p class="font-semibold text-sm">Curso Premium de Diseño Gráfico</p>
-                    <p class="text-xs text-slate-500 font-plusjack">INSTITUTO ALFA CARABOBO</p>
+                 <div>
+                 <p class="font-semibold text-sm">Curso Premium de Diseño Gráfico</p>
+                 <p class="text-xs text-slate-500 font-plusjack">INSTITUTO ALFA CARABOBO</p>
+                </div>
+
+                <span class="text-xs font-bold text-blue-600">2026</span>
+
                 </div>
 
                  <!-- cuadro rosa 2 -->
                  
-                <div class="gap-4 py-4 border-b border-slate-200">
+                <div class="flex justify-between items-start py-4 border-b border-slate-200"> 
+
+                  <div> 
                     <p class="font-semibold text-sm">Técnicas de Ilustración</p>
                     <p class="text-xs text-slate-500 font-plusjack">INSTITUTO ALFA CARABOBO</p>
+                  </div>
+                    <span class="text-xs font-bold text-blue-600">2026</span>
                 </div>
 
                  <!-- cuadro rosa 3-->
                  
-                <div class="gap-4 py-4 border-b border-slate-200">
-                    <p class="font-semibold text-sm">Diseño Gráfico</p>
+                <div class="flex justify-between items-start py-4 border-b border-slate-200">  
+
+                  <div>
+                 <p class="font-semibold text-sm">Diseño Gráfico</p>
                     <p class="text-xs text-slate-500 font-plusjack">INSTITUTO ALFA CARABOBO</p>
+                  </div>
+
+                    <span class="text-xs font-bold text-blue-600">2026</span>
+
                 </div>
 
             </div>
@@ -172,11 +187,5 @@
      </div>
 
     
-</section>
-
-<section>
-
-<div class="grid grid"><Tarjetainformacion /></div>
-
 </section>
 

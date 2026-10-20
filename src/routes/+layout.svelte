@@ -15,7 +15,7 @@ import "../app.css";
     </div>
     <div class="flex gap-10 uppercase font-medium text-zinc-700 text-xs">
       <a href="#Inicio">Inicio</a>
-       <a href="#Sobre-mi">Sobre mí</a>
+       <a href="#sobre-mi">SOBRE MÍ</a>
         <a href="#Proyectos">Proyectos</a>
          <a href="#Contacto">Contacto</a>
     </div>
