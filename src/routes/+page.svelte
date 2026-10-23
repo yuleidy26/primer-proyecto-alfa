@@ -189,3 +189,75 @@
     
 </section>
 
+<!-- Proyecto 1 -->
+<section class="bg-[#FFF4ED] text-slate-900 px-12 py-24">
+
+<!-- Cuadro verde 1 -->
+<div>
+
+<!--cuadro azul 1 -->
+<div>
+
+<div class="uppercase text-[#B34700] font-plusjack font-bold text-xs">
+  <p>PROYECTO 01 / IDENTIDAD CORPORATIVA & AUDIOVISUAL</p>
+</div>
+
+<div class="text-[#1B1B1F] font-playfair font-semibold text-5xl">
+  <h1>GUAO — Lenguaje <br> Dinámico & Audiovisual</h1>
+</div>
+</div>
+
+<!-- cuadro azul 2 -->
+<div class="font-plusjack  text-xs flex-col flex items-end ">
+<p class="text-[#645D58] font-bold">ENTREGA: 2026</p>
+<p class="text-[#1B1B1F] font-medium">Isotipo • Logotipo • Paleta Cromática • Aplicaciones
+de Marca</p>
+</div>
+
+</div>
+
+<!-- cuadro verde 2 -->
+<div>
+
+
+  <div>
+    <img src="Scene-_8.webp" alt="computadora">
+  </div> 
+  
+  <div>
+   <p class="uppercase text-[#B34700] font-plusjack font-bold text-xs">IDENTIDAD & PROPÓSITO DE MARCA</p>
+
+  <h1 class="text-[#1B1B1F] font-playfair font-base text-5xl"> La identidad de Guao nace <br>del dinamismo  la creatividad <br>las ganas de conectar.</h1>
+
+   <p>Guao es una marca enfocada en la creación de ideas y <br> edición de video para emprendedores y marcas <br> personales. El objetivo principal del proyecto fue <br> diseñar una identidad visual que reflejara su esencia: <br>
+   creativa, cercana y empática, utilizando un sistema <br>gráfico dinámico que resalta la energía y conexión del <br>
+   contenido audiovisual.</p>
+
+   <div class="paleta de colores">
+
+   <div class="color-naranja"></div> 
+   <div class="color-crema"></div> 
+   <div class=""></div> 
+   <div></div>
+
+   </div>
+
+
+   </div>
+
+<style>
+.color-naranja {
+  background-color: #FF5500;
+  width: 40px;
+  height: 40px;
+}
+</style>
+</div>
+
+<!-- cuadro verde 3 -->
+<div></div>
+
+</section>
+
+
+
