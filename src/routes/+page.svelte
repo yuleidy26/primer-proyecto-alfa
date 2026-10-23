@@ -217,28 +217,31 @@ de Marca</p>
 </div>
 
 <!-- cuadro verde 2 -->
-<div>
+<div class="grid grid-cols-2 gap-6 bg-white p-6">
 
 
   <div>
-    <img src="Scene-_8.webp" alt="computadora">
-  </div> 
+   <img src="Scene-_8.webp" alt="computadora" class="w-full h-auto">
+  </div>
   
-  <div>
+<div class="flex flex-col gap-4">
    <p class="uppercase text-[#B34700] font-plusjack font-bold text-xs">IDENTIDAD & PROPÓSITO DE MARCA</p>
 
   <h1 class="text-[#1B1B1F] font-playfair font-base text-5xl"> La identidad de Guao nace <br>del dinamismo  la creatividad <br>las ganas de conectar.</h1>
 
-   <p>Guao es una marca enfocada en la creación de ideas y <br> edición de video para emprendedores y marcas <br> personales. El objetivo principal del proyecto fue <br> diseñar una identidad visual que reflejara su esencia: <br>
-   creativa, cercana y empática, utilizando un sistema <br>gráfico dinámico que resalta la energía y conexión del <br>
+   <p>Guao es una marca enfocada en la creación de ideas y  edición de video para emprendedores y marcas  personales. El objetivo principal del proyecto fue  diseñar una identidad visual que reflejara su esencia: creativa, cercana y empática, utilizando un sistema gráfico dinámico que resalta la energía y conexión del 
    contenido audiovisual.</p>
 
-   <div class="paleta de colores">
+   <p class="uppercase text-[#645D58] font-plusjack font-bold text-xs mt-6">
+  PALETA CROMÁTICA OFICIAL
+   </p>
+
+   <div class="paleta-colores">
 
    <div class="color-naranja"></div> 
    <div class="color-crema"></div> 
-   <div class=""></div> 
-   <div></div>
+   <div class="color-blanco"></div> 
+   <div class="color-azul"></div>
 
    </div>
 
@@ -248,9 +251,38 @@ de Marca</p>
 <style>
 .color-naranja {
   background-color: #FF5500;
-  width: 40px;
-  height: 40px;
+  width: 105px;
+  height: 48px;
+  border-radius: 6px 0 0 6px;
 }
+
+.color-crema {
+  background-color: #F7E9C3;
+  width: 105px;
+  height: 48px;
+ 
+}
+
+.color-blanco {
+  background-color: #FFFFFF;
+  width: 105px;
+  height: 48px;
+}
+
+
+.color-azul {
+  background-color: #458FEA;
+  width: 105px;
+  height: 48px;
+  
+}
+
+
+.paleta-colores {
+  display: flex;
+  gap: 0px;
+}
+
 </style>
 </div>
 
