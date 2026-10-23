@@ -1,6 +1,20 @@
 <script>
 import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
+  import Formulario from '#lib/components/Formulario.svelte';
   import Icon from '@iconify/svelte';
+
+  const tarjetas = [
+    {
+      titulo: 'SISTEMA VISUAL',
+      descripcion: 'Una breve descripción del proyecto.',
+      imagen: '/Scene-_8.webp'
+    },
+    {
+      titulo: 'Proyecto 2',
+      descripcion: 'Esta es la segunda tarjeta de prueba.',
+      imagen: '/Scene-_8.webp'
+    }
+  ];
 </script>
 
 
@@ -23,7 +37,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     <!-- Columna 1: Título y Bajada -->
     <div class="flex flex-col gap-4">
       <h1 class="text-4xl lg:text-5xl font-playfair font-normal leading-tight">
-        Diseño Gráfico e <br>Identidad Visual
+        Diseño Gráfico e Identidad Visual
       </h1>
       <p class="text-xs font-plusjack font-light max-w-sm leading-relaxed text-blue-100">
         Diseño piezas con propósito y construyo universos de marca sólidos, combinando creatividad, estrategia y coherencia en cada detalle
@@ -236,71 +250,37 @@ de Marca</p>
   PALETA CROMÁTICA OFICIAL
    </p>
 
-   <div class="paleta-colores">
+   <div class="flex">
 
-   <div class="color-naranja"></div> 
-   <div class="color-crema"></div> 
-   <div class="color-blanco"></div> 
-   <div class="color-azul"></div>
-
-   </div>
-
+   <div class="w-[105px] h-12 bg-[#FF5500] rounded-l-md"></div> 
+   <div class="w-[105px] h-12 bg-[#F7E9C3]"></div> 
+   <div class="w-[105px] h-12 bg-white"></div> 
+   <div class="w-[105px] h-12 bg-[#458FEA]"></div>
 
    </div>
 
-<style>
-.color-naranja {
-  background-color: #FF5500;
-  width: 105px;
-  height: 48px;
-  border-radius: 6px 0 0 6px;
-}
 
-.color-crema {
-  background-color: #F7E9C3;
-  width: 105px;
-  height: 48px;
- 
-}
+   </div>
 
-.color-blanco {
-  background-color: #FFFFFF;
-  width: 105px;
-  height: 48px;
-}
-
-
-.color-azul {
-  background-color: #458FEA;
-  width: 105px;
-  height: 48px;
-  
-}
-
-
-.paleta-colores {
-  display: flex;
-  gap: 0px;
-}
-
-</style>
 </div>
 
 <!-- cuadro verde 3 -->
-<div class="grid grid-cols-2 gap-6 mt-8">
-  <Tarjetainformacion
-    titulo="Nombre del proyecto"
-    descripcion="Una breve descripción del proyecto."
-    imagen="/Scene-_8.webp"
-  />
-
-  <Tarjetainformacion
-    titulo="Proyecto 2"
-    descripcion="Esta es la segunda tarjeta de prueba."
-    imagen="/Scene-_8.webp"
-  />
+<div class="grid grid-cols-2 gap-10 mt-8">
+  {#each tarjetas as tarjeta}
+    <div>
+      <Tarjetainformacion
+        titulo={tarjeta.titulo}
+        descripcion={tarjeta.descripcion}
+        imagen={tarjeta.imagen}
+      />
+    </div>
+  {/each}
 </div>
 </section>
 
+
+
+
+<Formulario />
 
 
