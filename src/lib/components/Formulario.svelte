@@ -1,13 +1,5 @@
 <script>
-  import { z } from 'zod';
-
-  const esquemaContacto = z.object({
-    nombre: z.string().trim().min(2, 'Ingresa tu nombre'),
-    correo: z.email('Ingresa un correo válido'),
-    tipo: z.string().trim().min(2, 'Indica el tipo de empresa o emprendimiento'),
-    servicios: z.array(z.string()).min(1, 'Selecciona al menos un servicio'),
-    proyecto: z.string().trim().min(10, 'Cuéntame un poco más sobre tu proyecto')
-  });
+  import { enhance } from '$app/forms';
 
   let enviado = $state(false);
   /** @type {string[]} */
@@ -28,37 +20,28 @@
     }
   }
 
-  /** @param {SubmitEvent} event */
-  function manejarEnvio(event) {
-    event.preventDefault();
+  /** @type {import('$app/forms').SubmitFunction} */
+  const manejarEnvio = () => {
+    return async ({ result, update }) => {
+      await update();
 
-    const form = event.currentTarget;
-    if (!(form instanceof HTMLFormElement)) return;
-
-    const datos = new FormData(form);
-    const resultado = esquemaContacto.safeParse({
-      nombre: String(datos.get('nombre') ?? ''),
-      correo: String(datos.get('correo') ?? ''),
-      tipo: String(datos.get('tipo') ?? ''),
-      servicios,
-      proyecto: String(datos.get('proyecto') ?? '')
-    });
-
-    if (!resultado.success) {
-      errores = resultado.error.flatten().fieldErrors;
-      enviado = false;
-      return;
-    }
-
-    errores = {};
-    enviado = true;
-    form.reset();
-    servicios = [];
-  }
+      if (result.type === 'failure') {
+        errores = result.data?.errores ?? {};
+        enviado = false;
+      } else if (result.type === 'success') {
+        errores = {};
+        enviado = true;
+        servicios = [];
+      } else {
+        errores = {};
+        enviado = false;
+      }
+    };
+  };
 </script>
 
 <section id="Contacto" class="formulario bg-[#FCF8FE] text-slate-900 px-12 py-24">
-  <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
     <div class="max-w-2xl flex flex-col gap-4">
       <p class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">CONTACTO</p>
@@ -67,8 +50,33 @@
         Creemos algo <span class="text-[#0039C6] italic">extraordinario</span><br> juntos.
       </h2>
       <p class="font-plusjack text-sm md:text-base text-[#434656] leading-relaxed">
-        Completa el formulario y me pondré en contacto contigo para darle vida a tu marca.
+        Desde identidades visuales memorables hasta sistemas de<br>
+        redes sociales y publicaciones editoriales. Cuéntame<br>
+        sobre tu próximo proyecto.
       </p>
+
+      <div class="mt-6 flex flex-col gap-4 font-plusjack text-sm text-[#434656]">
+        <div class="flex flex-col gap-1">
+          <span class="font-bold text-xs uppercase tracking-wider text-[#0039C6]">Correo electrónico</span>
+          <a href="mailto:yuleidyamaya2026@gmail.com" class="hover:text-[#0039C6] transition">
+            yuleidyamaya2026@gmail.com
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <span class="font-bold text-xs uppercase tracking-wider text-[#0039C6]">Teléfono / WhatsApp</span>
+          <a href="https://wa.me/584129293832" target="_blank" rel="noopener noreferrer" class="hover:text-[#0039C6] transition">
+            +58 412-9293832
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <span class="font-bold text-xs uppercase tracking-wider text-[#0039C6]">Instagram</span>
+          <a href="https://www.instagram.com/artby_yul/" target="_blank" rel="noopener noreferrer" class="hover:text-[#0039C6] transition">
+            @artby_yul
+          </a>
+        </div>
+      </div>
     </div>
 
     {#if enviado}
@@ -86,7 +94,13 @@
         </button>
       </div>
     {:else}
-      <form class="mt-12 lg:mt-0 lg:col-start-2 max-w-2xl flex flex-col gap-6" novalidate onsubmit={manejarEnvio}>
+      <form
+        class="mt-12 lg:mt-0 lg:col-start-2 max-w-2xl flex flex-col gap-6"
+        method="POST"
+        action="?/contacto"
+        novalidate
+        use:enhance={manejarEnvio}
+      >
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="flex flex-col gap-2">
             <label for="nombre" class="font-plusjack font-bold text-xs tracking-wider uppercase text-[#434656]">
@@ -169,6 +183,9 @@
           {#if errores.servicios}
             <p class="font-plusjack text-xs text-red-600">{errores.servicios[0]}</p>
           {/if}
+          {#each servicios as servicio}
+            <input type="hidden" name="servicios" value={servicio} />
+          {/each}
         </div>
 
         <div class="flex flex-col gap-2">
