@@ -3,6 +3,7 @@
 import Icon from "@iconify/svelte";
 import "../app.css";
 	let { children } = $props();
+    
 </script>
 
 <svelte:head>

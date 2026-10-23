@@ -1,5 +1,5 @@
 <script>
-    import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
+import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   import Icon from '@iconify/svelte';
 </script>
 
@@ -287,8 +287,19 @@ de Marca</p>
 </div>
 
 <!-- cuadro verde 3 -->
-<div></div>
+<div class="grid grid-cols-2 gap-6 mt-8">
+  <Tarjetainformacion
+    titulo="Nombre del proyecto"
+    descripcion="Una breve descripción del proyecto."
+    imagen="/Scene-_8.webp"
+  />
 
+  <Tarjetainformacion
+    titulo="Proyecto 2"
+    descripcion="Esta es la segunda tarjeta de prueba."
+    imagen="/Scene-_8.webp"
+  />
+</div>
 </section>
 
 
