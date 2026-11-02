@@ -5,11 +5,13 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
   const tarjetas = [
     {
+      subtitulo: "SISTEMA VISUAL",
       titulo: 'Versiones & Adaptabilidad',
       descripcion: 'Desarrollo del logotipo y sus variantes cromáticas para garantizar una presencia visual limpia y funcional. El diseño está optimizado para adaptarse con claridad a formatos cuadrados de redes sociales, fotos de perfil y piezas promocionales impresas.',
       imagen: '/guao.webp'
     },
     {
+      subtitulo: "APLICACIÓN REAL DE MARCA",
       titulo: 'Merchandising & Material Publicitario',
       descripcion: 'Aplicación de la identidad gráfica en artículos corporativos y prendas de vestir (bordado de marca en gorra), demostrando la versatilidad de la paleta cromática naranja y el isotipo en medios físicos táctiles.',
       imagen: '/Yuleidy-Amaya-Mockup_.webp'
@@ -270,17 +272,18 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   </div>
 
   <!-- Cuadro verde 3: Tarjetas dinámicas al final -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
-    {#each tarjetas as tarjeta}
-      <div>
-        <Tarjetainformacion
-          titulo={tarjeta.titulo}
-          descripcion={tarjeta.descripcion}
-          imagen={tarjeta.imagen}
-        />
-      </div>
-    {/each}
-  </div>
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+  {#each tarjetas as tarjeta}
+    <div>
+      <Tarjetainformacion
+        subtitulo={tarjeta.subtitulo}
+        titulo={tarjeta.titulo}
+        descripcion={tarjeta.descripcion}
+        imagen={tarjeta.imagen}
+      />
+    </div>
+  {/each}
+</div>
 
 </section>
 
