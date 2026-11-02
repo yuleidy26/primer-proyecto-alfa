@@ -206,100 +206,84 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
 
 <!-- Proyecto 1 -->
+<!-- Proyecto 1 -->
 <section class="bg-[#FFF4ED] text-slate-900 px-12 py-24">
 
-    <!-- Encabezado -->
-    <div class="flex justify-between items-start gap-8 mb-16">
+  <!-- Encabezado superior -->
+  <div class="flex justify-between items-start mb-16">
+    <!-- Título principal -->
+    <div>
+      <div class="uppercase text-[#B34700] font-bold text-xs tracking-wider mb-2">
+        <p>PROYECTO 01 / IDENTIDAD CORPORATIVA & AUDIOVISUAL</p>
+      </div>
+      <div class="text-[#1B1B1F] font-serif font-semibold text-5xl leading-tight">
+        <h1>GUAO — Lenguaje <br> Dinámico & Audiovisual</h1>
+      </div>
+    </div>
 
-        <!-- Título del proyecto -->
-        <div>
-            <div class="uppercase text-[#B34700] font-plusjack font-bold text-xs">
-                <p>PROYECTO 01 / IDENTIDAD CORPORATIVA & AUDIOVISUAL</p>
-            </div>
+    <!-- Metadatos de entrega -->
+    <div class="text-xs text-right flex flex-col items-end">
+      <p class="text-[#645D58] font-bold mb-1">ENTREGA: 2026</p>
+      <p class="text-[#1B1B1F] font-medium max-w-[220px]">Isotipo • Logotipo • Paleta Cromática • Aplicaciones de Marca</p>
+    </div>
+  </div>
 
-            <div class="text-[#1B1B1F] font-playfair font-semibold text-5xl">
-                <h1>GUAO — Lenguaje <br> Dinámico & Audiovisual</h1>
-            </div>
-        </div>
+  <!-- Contenedor principal de contenido (Tarjeta blanca) -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white p-8 md:p-12 shadow-sm items-center mb-10">
+    
+    <!-- Columna izquierda: Laptop con marco de ventana y los 3 puntos -->
+    <div class="w-full rounded-lg overflow-hidden shadow-lg bg-[#111111]">
+      <!-- Barra superior estilo ventana con 3 botones -->
+      <div class="bg-[#1e1e1e] px-4 py-3 flex items-center gap-2">
+        <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+        <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+        <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+      </div>
+      <!-- Imagen de la laptop -->
+      <img src="Scene-_8.webp" alt="computadora" class="w-full h-auto object-cover">
+    </div>
+    
+    <!-- Columna derecha: Textos y paleta -->
+    <div class="flex flex-col gap-5">
+      <p class="uppercase text-[#B34700] font-bold text-xs tracking-wider">IDENTIDAD & PROPÓSITO DE MARCA</p>
 
-        <!-- Información de entrega -->
-        <div class="font-plusjack text-xs flex flex-col items-end text-right">
-            <p class="text-[#645D58] font-bold">ENTREGA: 2026</p>
+      <h2 class="text-[#1B1B1F] font-serif text-3xl md:text-4xl leading-snug font-normal">
+        La identidad de Guao nace del dinamismo, la creatividad y las ganas de conectar.
+      </h2>
 
-            <p class="text-[#1B1B1F] font-medium">
-                Isotipo • Logotipo • Paleta Cromática • Aplicaciones de Marca
-            </p>
-        </div>
+      <p class="text-[#4A4542] text-sm md:text-base leading-relaxed">
+        Guao es una marca enfocada en la creación de ideas y edición de video para emprendedores y marcas personales. El objetivo principal del proyecto fue diseñar una identidad visual que reflejara su esencia: creativa, cercana y empática, utilizando un sistema gráfico dinámico que resalta la energía y conexión del contenido audiovisual.
+      </p>
+
+      <p class="uppercase text-[#645D58] font-bold text-xs tracking-wider mt-2">
+        PALETA CROMÁTICA OFICIAL
+      </p>
+
+      <!-- Paleta de colores simétrica en 4 columnas con sus textos -->
+      <div class="grid grid-cols-4 w-full h-12 rounded-md overflow-hidden border border-slate-200 shadow-sm">
+        <div class="bg-[#FF5500] flex items-center justify-center text-[10px] text-white font-mono font-bold">#FF5500</div>
+        <div class="bg-[#F7E9C3] flex items-center justify-center text-[10px] text-[#645D58] font-mono font-bold">#F7E9C3</div>
+        <div class="bg-white flex items-center justify-center text-[10px] text-slate-400 font-mono font-bold border-x border-slate-200">#FFFFFF</div>
+        <div class="bg-[#458FEA] flex items-center justify-center text-[10px] text-white font-mono font-bold">#458FEA</div>
+      </div>
 
     </div>
 
-    <!-- Tarjeta principal -->
-    <div class="grid grid-cols-2 gap-10 bg-white p-12">
+  </div>
 
-        <!-- Imagen del proyecto -->
-        <div class="aspect-[4/3] overflow-hidden rounded-lg">
-            <img
-                src="Scene-_8.webp"
-                alt="computadora"
-                class="w-full h-full object-cover"
-            >
-        </div>
-
-        <!-- Información del proyecto -->
-        <div class="flex flex-col gap-4">
-
-            <p class="uppercase text-[#B34700] font-plusjack font-bold text-xs">
-                IDENTIDAD & PROPÓSITO DE MARCA
-            </p>
-
-            <h2 class="text-[#1B1B1F] font-playfair font-normal text-5xl">
-                La identidad de Guao nace <br>
-                del dinamismo, la creatividad y <br>
-                las ganas de conectar.
-            </h2>
-
-            <p>
-                Guao es una marca enfocada en la creación de ideas y edición
-                de video para emprendedores y marcas personales. El objetivo
-                principal del proyecto fue diseñar una identidad visual que
-                reflejara su esencia: creativa, cercana y empática, utilizando
-                un sistema gráfico dinámico que resalta la energía y conexión
-                del contenido audiovisual.
-            </p>
-
-            <!-- Paleta cromática -->
-            <p class="uppercase text-[#645D58] font-plusjack font-bold text-xs mt-6">
-                PALETA CROMÁTICA OFICIAL
-            </p>
-
-            <div class="flex">
-                <div class="w-[105px] h-12 bg-[#FF5500] rounded-l-md"></div>
-                <div class="w-[105px] h-12 bg-[#F7E9C3]"></div>
-                <div class="w-[105px] h-12 bg-white"></div>
-                <div class="w-[105px] h-12 bg-[#458FEA] rounded-r-md"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- Tarjetas inferiores -->
-    <div class="grid grid-cols-2 gap-10 mt-8">
-
-        {#each tarjetas as tarjeta}
-            <div>
-                <Tarjetainformacion
-                    titulo={tarjeta.titulo}
-                    descripcion={tarjeta.descripcion}
-                    imagen={tarjeta.imagen}
-                />
-            </div>
-        {/each}
-
-    </div>
+  <!-- Cuadro verde 3: Tarjetas dinámicas al final -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
+    {#each tarjetas as tarjeta}
+      <div>
+        <Tarjetainformacion
+          titulo={tarjeta.titulo}
+          descripcion={tarjeta.descripcion}
+          imagen={tarjeta.imagen}
+        />
+      </div>
+    {/each}
+  </div>
 
 </section>
-
-
 
 <Formulario />
