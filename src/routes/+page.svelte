@@ -214,7 +214,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       <div class="uppercase text-[#B34700] font-bold text-xs tracking-wider mb-2">
         <p>PROYECTO 01 / IDENTIDAD CORPORATIVA & AUDIOVISUAL</p>
       </div>
-      <div class="text-[#1B1B1F] font-playfair font-semibold text-5xl">
+      <div class="text-[#1B1B1F] font-playfair font-semibold text-8xl">
         <h1>GUAO — Lenguaje <br> Dinámico & Audiovisual</h1>
       </div>
     </div>
