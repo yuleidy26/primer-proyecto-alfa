@@ -204,8 +204,6 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 </section>
 
 
-
-<!-- Proyecto 1 -->
 <!-- Proyecto 1 -->
 <section class="bg-[#FFF4ED] text-slate-900 px-12 py-24">
 
@@ -216,7 +214,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       <div class="uppercase text-[#B34700] font-bold text-xs tracking-wider mb-2">
         <p>PROYECTO 01 / IDENTIDAD CORPORATIVA & AUDIOVISUAL</p>
       </div>
-      <div class="text-[#1B1B1F] font-serif font-semibold text-5xl leading-tight">
+      <div class="text-[#1B1B1F] font-playfair font-semibold text-5xl">
         <h1>GUAO — Lenguaje <br> Dinámico & Audiovisual</h1>
       </div>
     </div>
@@ -247,7 +245,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     <div class="flex flex-col gap-5">
       <p class="uppercase text-[#B34700] font-bold text-xs tracking-wider">IDENTIDAD & PROPÓSITO DE MARCA</p>
 
-      <h2 class="text-[#1B1B1F] font-serif text-3xl md:text-4xl leading-snug font-normal">
+      <h2 class="text-[#1B1B1F] font-playfair text-3xl md:text-4xl leading-snug font-normal">
         La identidad de Guao nace del dinamismo, la creatividad y las ganas de conectar.
       </h2>
 
