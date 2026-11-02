@@ -5,14 +5,14 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
   const tarjetas = [
     {
-      titulo: 'SISTEMA VISUAL',
-      descripcion: 'Una breve descripción del proyecto.',
-      imagen: '/Scene-_8.webp'
+      titulo: 'Versiones & Adaptabilidad',
+      descripcion: 'Desarrollo del logotipo y sus variantes cromáticas para garantizar una presencia visual limpia y funcional. El diseño está optimizado para adaptarse con claridad a formatos cuadrados de redes sociales, fotos de perfil y piezas promocionales impresas.',
+      imagen: '/guao.webp'
     },
     {
-      titulo: 'Proyecto 2',
-      descripcion: 'Esta es la segunda tarjeta de prueba.',
-      imagen: '/Scene-_8.webp'
+      titulo: 'Merchandising & Material Publicitario',
+      descripcion: 'Aplicación de la identidad gráfica en artículos corporativos y prendas de vestir (bordado de marca en gorra), demostrando la versatilidad de la paleta cromática naranja y el isotipo en medios físicos táctiles.',
+      imagen: '/Yuleidy-Amaya-Mockup_.webp'
     }
   ];
 </script>
@@ -299,6 +299,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     </div>
 
 </section>
+
 
 
 <Formulario />
