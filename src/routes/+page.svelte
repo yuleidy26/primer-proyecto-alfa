@@ -203,84 +203,102 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     
 </section>
 
+
+
 <!-- Proyecto 1 -->
 <section class="bg-[#FFF4ED] text-slate-900 px-12 py-24">
 
-<!-- Cuadro verde 1 -->
-<div>
+    <!-- Encabezado -->
+    <div class="flex justify-between items-start gap-8 mb-16">
 
-<!--cuadro azul 1 -->
-<div>
+        <!-- Título del proyecto -->
+        <div>
+            <div class="uppercase text-[#B34700] font-plusjack font-bold text-xs">
+                <p>PROYECTO 01 / IDENTIDAD CORPORATIVA & AUDIOVISUAL</p>
+            </div>
 
-<div class="uppercase text-[#B34700] font-plusjack font-bold text-xs">
-  <p>PROYECTO 01 / IDENTIDAD CORPORATIVA & AUDIOVISUAL</p>
-</div>
+            <div class="text-[#1B1B1F] font-playfair font-semibold text-5xl">
+                <h1>GUAO — Lenguaje <br> Dinámico & Audiovisual</h1>
+            </div>
+        </div>
 
-<div class="text-[#1B1B1F] font-playfair font-semibold text-5xl">
-  <h1>GUAO — Lenguaje <br> Dinámico & Audiovisual</h1>
-</div>
-</div>
+        <!-- Información de entrega -->
+        <div class="font-plusjack text-xs flex flex-col items-end text-right">
+            <p class="text-[#645D58] font-bold">ENTREGA: 2026</p>
 
-<!-- cuadro azul 2 -->
-<div class="font-plusjack  text-xs flex-col flex items-end ">
-<p class="text-[#645D58] font-bold">ENTREGA: 2026</p>
-<p class="text-[#1B1B1F] font-medium">Isotipo • Logotipo • Paleta Cromática • Aplicaciones
-de Marca</p>
-</div>
+            <p class="text-[#1B1B1F] font-medium">
+                Isotipo • Logotipo • Paleta Cromática • Aplicaciones de Marca
+            </p>
+        </div>
 
-</div>
-
-<!-- cuadro verde 2 -->
-<div class="grid grid-cols-2 gap-6 bg-white p-6">
-
-
-  <div>
-   <img src="Scene-_8.webp" alt="computadora" class="w-full h-auto">
-  </div>
-  
-<div class="flex flex-col gap-4">
-   <p class="uppercase text-[#B34700] font-plusjack font-bold text-xs">IDENTIDAD & PROPÓSITO DE MARCA</p>
-
-  <h1 class="text-[#1B1B1F] font-playfair font-base text-5xl"> La identidad de Guao nace <br>del dinamismo  la creatividad <br>las ganas de conectar.</h1>
-
-   <p>Guao es una marca enfocada en la creación de ideas y  edición de video para emprendedores y marcas  personales. El objetivo principal del proyecto fue  diseñar una identidad visual que reflejara su esencia: creativa, cercana y empática, utilizando un sistema gráfico dinámico que resalta la energía y conexión del 
-   contenido audiovisual.</p>
-
-   <p class="uppercase text-[#645D58] font-plusjack font-bold text-xs mt-6">
-  PALETA CROMÁTICA OFICIAL
-   </p>
-
-   <div class="flex">
-
-   <div class="w-[105px] h-12 bg-[#FF5500] rounded-l-md"></div> 
-   <div class="w-[105px] h-12 bg-[#F7E9C3]"></div> 
-   <div class="w-[105px] h-12 bg-white"></div> 
-   <div class="w-[105px] h-12 bg-[#458FEA]"></div>
-
-   </div>
-
-
-   </div>
-
-</div>
-
-<!-- cuadro verde 3 -->
-<div class="grid grid-cols-2 gap-10 mt-8">
-  {#each tarjetas as tarjeta}
-    <div>
-      <Tarjetainformacion
-        titulo={tarjeta.titulo}
-        descripcion={tarjeta.descripcion}
-        imagen={tarjeta.imagen}
-      />
     </div>
-  {/each}
-</div>
+
+    <!-- Tarjeta principal -->
+    <div class="grid grid-cols-2 gap-10 bg-white p-12">
+
+        <!-- Imagen del proyecto -->
+        <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img
+                src="Scene-_8.webp"
+                alt="computadora"
+                class="w-full h-full object-cover"
+            >
+        </div>
+
+        <!-- Información del proyecto -->
+        <div class="flex flex-col gap-4">
+
+            <p class="uppercase text-[#B34700] font-plusjack font-bold text-xs">
+                IDENTIDAD & PROPÓSITO DE MARCA
+            </p>
+
+            <h2 class="text-[#1B1B1F] font-playfair font-normal text-5xl">
+                La identidad de Guao nace <br>
+                del dinamismo, la creatividad y <br>
+                las ganas de conectar.
+            </h2>
+
+            <p>
+                Guao es una marca enfocada en la creación de ideas y edición
+                de video para emprendedores y marcas personales. El objetivo
+                principal del proyecto fue diseñar una identidad visual que
+                reflejara su esencia: creativa, cercana y empática, utilizando
+                un sistema gráfico dinámico que resalta la energía y conexión
+                del contenido audiovisual.
+            </p>
+
+            <!-- Paleta cromática -->
+            <p class="uppercase text-[#645D58] font-plusjack font-bold text-xs mt-6">
+                PALETA CROMÁTICA OFICIAL
+            </p>
+
+            <div class="flex">
+                <div class="w-[105px] h-12 bg-[#FF5500] rounded-l-md"></div>
+                <div class="w-[105px] h-12 bg-[#F7E9C3]"></div>
+                <div class="w-[105px] h-12 bg-white"></div>
+                <div class="w-[105px] h-12 bg-[#458FEA] rounded-r-md"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Tarjetas inferiores -->
+    <div class="grid grid-cols-2 gap-10 mt-8">
+
+        {#each tarjetas as tarjeta}
+            <div>
+                <Tarjetainformacion
+                    titulo={tarjeta.titulo}
+                    descripcion={tarjeta.descripcion}
+                    imagen={tarjeta.imagen}
+                />
+            </div>
+        {/each}
+
+    </div>
+
 </section>
 
 
-
-
 <Formulario />
-
-
