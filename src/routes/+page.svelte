@@ -404,10 +404,10 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     </div>
   </div>
 
-  <!-- Contenedor principal de la sección (Grid de 12 columnas con items-stretch para igualar alturas) -->
+  <!-- Contenedor principal de la sección (Grid de 12 columnas) -->
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
     
-    <!-- Columna Izquierda: Tarjeta del conejo (Se estira para coincidir exactamente con la altura de la derecha) -->
+    <!-- Columna Izquierda: Tarjeta del conejo (Imagen grande y centrada simétricamente) -->
     <div class="lg:col-span-7 bg-white p-6 md:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between h-full">
       <div>
         <!-- Subtítulo de la tarjeta superior -->
@@ -420,12 +420,12 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
           </span>
         </div>
 
-        <!-- FOTO IZQUIERDA -->
-        <div class="w-full flex items-center justify-center my-6">
+        <!-- FOTO IZQUIERDA (Grande y perfectamente centrada) -->
+        <div class="w-full flex-1 flex items-center justify-center my-4">
           <img 
             src="Vectorización-Conejo_Mesa-de-trabajo-1.webp" 
             alt="Representación topológica de la liebre - Veltrix" 
-            class="w-full h-auto max-h-[440px] object-contain"
+            class="w-full h-auto max-h-[460px] object-contain"
           >
         </div>
       </div>
@@ -438,7 +438,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       </div>
     </div>
 
-    <!-- Columna Derecha: Gorra y Tarjeta de información (Definen la altura de la sección) -->
+    <!-- Columna Derecha: Gorra y Tarjeta de información (Intactas) -->
     <div class="lg:col-span-5 flex flex-col gap-6">
       
       <!-- Contenedor de la foto de la gorra -->
