@@ -605,8 +605,8 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
         <p>PROYECTO 05 / DIRECCIÓN DE ARTE EDITORIAL</p>
       </div>
       <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
-        VOGUE — Caso de 
-        Estudio: <br> Portada Editorial
+        VOGUE — Caso de <br>
+        Estudio: Portada Editorial
       </h1>
     </div>
 
@@ -619,20 +619,20 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     </div>
   </div>
 
-  <!-- Contenedor principal de la sección (Grid de 12 columnas) -->
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+  <!-- Contenedor principal de la sección (Grid de 12 columnas alineado al centro) -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
     
-    <!-- Columna Izquierda: Solo la imagen de la revista con sombra directa -->
-    <div class="lg:col-span-7 flex justify-center">
+    <!-- Columna Izquierda: Imagen de la revista a mayor escala con su sombra -->
+    <div class="lg:col-span-7 flex justify-center items-center">
       <img 
         src="Revista-Yuleidy-Amaya-nuevo.webp" 
         alt="Vogue - Caso de Estudio Portada Editorial" 
-        class="w-full max-w-[500px] h-auto object-contain shadow-2xl"
+        class="w-full max-w-[620px] h-auto object-contain shadow-2xl"
       >
     </div>
 
-    <!-- Columna Derecha: Fichas 01, 02 y 03 (Ocupa 5 columnas) -->
-    <div class="lg:col-span-5 flex flex-col gap-6">
+    <!-- Columna Derecha: Fichas 01, 02 y 03 (Centradas verticalmente respecto a la imagen) -->
+    <div class="lg:col-span-5 flex flex-col gap-6 justify-center">
       
       <!-- Ficha 01 / Integración Visual & Profundidad -->
       <div class="bg-white p-6 md:p-7 border border-slate-200/80 shadow-xs flex flex-col gap-3 font-plusjack">
