@@ -46,7 +46,10 @@
     <!-- Columna Izquierda: Títulos y Tarjetas de Contacto -->
     <div class="lg:col-span-5 flex flex-col gap-8">
       <div>
-        <p class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider mb-3">CONTACTO</p>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-8 h-[2px] bg-[#0039C6]"></div>
+          <p class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">CONTACTO</p>
+        </div>
         <h2 class="text-4xl md:text-5xl font-playfair font-semibold leading-tight text-slate-900">
           ¿Tienes una visión<br> en mente?<br>
           Creemos algo <span class="text-[#0039C6] italic">extraordinario</span><br> juntos.
@@ -119,13 +122,13 @@
       </div>
     </div>
 
-    <!-- Columna Derecha: Tarjeta del Formulario -->
-    <div class="lg:col-span-7 bg-white p-8 md:p-10 rounded-2xl border border-slate-200 shadow-sm relative">
+    <!-- Columna Derecha: Formulario Libre (Sin cuadro) -->
+    <div class="lg:col-span-7 flex flex-col gap-6">
       
-      <!-- Cabecera interna con "Hablemos" y etiqueta de respuesta -->
-      <div class="flex justify-between items-center mb-8 pb-4 border-b border-slate-100 font-plusjack">
+      <!-- Cabecera interna libre -->
+      <div class="flex justify-between items-center pb-4 border-b border-slate-100 font-plusjack">
         <span class="text-xs uppercase font-bold tracking-widest text-[#0039C6]">Hablemos</span>
-        <span class="text-[10px] font-bold uppercase tracking-wider text-[#0039C6] bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
+        <span class="text-[10px] font-bold uppercase tracking-wider text-[#0039C6] bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-100">
           Respuesta en 24 h
         </span>
       </div>
@@ -150,60 +153,61 @@
           action="?/contacto"
           novalidate
           use:enhance={manejarEnvio}
-          class="flex flex-col gap-6"
+          class="flex flex-col gap-5"
         >
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="flex flex-col gap-2 font-plusjack">
-              <label for="nombre" class="font-bold text-xs tracking-wider uppercase text-[#434656]">
-                Nombre <span class="text-[#0039C6]">*</span>
-              </label>
-              <input
-                id="nombre"
-                name="nombre"
-                type="text"
-                required
-                placeholder="Tu nombre"
-                aria-invalid={!!errores.nombre}
-                class="bg-white border border-slate-300 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#0039C6] focus:ring-1 focus:ring-[#0039C6] transition"
-                class:border-red-500={!!errores.nombre}
-              />
-              {#if errores.nombre}
-                <p class="text-xs text-red-600">{errores.nombre[0]}</p>
-              {/if}
-            </div>
-
-            <div class="flex flex-col gap-2 font-plusjack">
-              <label for="correo" class="font-bold text-xs tracking-wider uppercase text-[#434656]">
-                Correo <span class="text-[#0039C6]">*</span>
-              </label>
-              <input
-                id="correo"
-                name="correo"
-                type="email"
-                required
-                placeholder="tucorreo@ejemplo.com"
-                aria-invalid={!!errores.correo}
-                class="bg-white border border-slate-300 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#0039C6] focus:ring-1 focus:ring-[#0039C6] transition"
-                class:border-red-500={!!errores.correo}
-              />
-              {#if errores.correo}
-                <p class="text-xs text-red-600">{errores.correo[0]}</p>
-              {/if}
-            </div>
+          <!-- Nombre completo -->
+          <div class="flex flex-col gap-2 font-plusjack">
+            <label for="nombre" class="font-bold text-xs tracking-wider uppercase text-[#434656]">
+              Nombre completo <span class="text-[#0039C6]">*</span>
+            </label>
+            <input
+              id="nombre"
+              name="nombre"
+              type="text"
+              required
+              placeholder="ej. María Morales"
+              aria-invalid={!!errores.nombre}
+              class="bg-white border border-slate-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#0039C6] focus:ring-1 focus:ring-[#0039C6] transition"
+              class:border-red-500={!!errores.nombre}
+            />
+            {#if errores.nombre}
+              <p class="text-xs text-red-600">{errores.nombre[0]}</p>
+            {/if}
           </div>
 
+          <!-- Correo electrónico -->
+          <div class="flex flex-col gap-2 font-plusjack">
+            <label for="correo" class="font-bold text-xs tracking-wider uppercase text-[#434656]">
+              Correo electrónico <span class="text-[#0039C6]">*</span>
+            </label>
+            <input
+              id="correo"
+              name="correo"
+              type="email"
+              required
+              placeholder="hola@tuempresa.com"
+              aria-invalid={!!errores.correo}
+              class="bg-white border border-slate-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#0039C6] focus:ring-1 focus:ring-[#0039C6] transition"
+              class:border-red-500={!!errores.correo}
+            />
+            {#if errores.correo}
+              <p class="text-xs text-red-600">{errores.correo[0]}</p>
+            {/if}
+          </div>
+
+          <!-- Tipo de empresa -->
           <div class="flex flex-col gap-2 font-plusjack">
             <label for="tipo" class="font-bold text-xs tracking-wider uppercase text-[#434656]">
-              Tipo de empresa o emprendimiento
+              Tipo de empresa / emprendimiento
             </label>
             <input
               id="tipo"
               name="tipo"
               type="text"
               required
-              placeholder="Ej: Emprendimiento, empresa, marca personal..."
+              placeholder="ej. Marca de moda, Startup audiovisual, Editorial"
               aria-invalid={!!errores.tipo}
-              class="bg-white border border-slate-300 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#0039C6] focus:ring-1 focus:ring-[#0039C6] transition"
+              class="bg-white border border-slate-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#0039C6] focus:ring-1 focus:ring-[#0039C6] transition"
               class:border-red-500={!!errores.tipo}
             />
             {#if errores.tipo}
@@ -211,6 +215,7 @@
             {/if}
           </div>
 
+          <!-- ¿En qué te puedo ayudar? -->
           <div class="flex flex-col gap-3 font-plusjack">
             <span class="font-bold text-xs tracking-wider uppercase text-[#434656]">
               ¿En qué te puedo ayudar?
@@ -224,7 +229,7 @@
                   class={`border rounded-lg px-4 py-3 font-bold text-xs uppercase tracking-wider transition text-center ${
                     servicios.includes(servicio)
                       ? 'bg-[#0039C6] text-white border-[#0039C6]'
-                      : 'bg-white text-[#434656] border-slate-300 hover:border-[#0039C6]'
+                      : 'bg-white text-[#434656] border-slate-200 hover:border-[#0039C6]'
                   }`}
                 >
                   {servicio}
@@ -239,6 +244,7 @@
             {/each}
           </div>
 
+          <!-- Cuéntame sobre tu proyecto -->
           <div class="flex flex-col gap-2 font-plusjack">
             <label for="proyecto" class="font-bold text-xs tracking-wider uppercase text-[#434656]">
               Cuéntame sobre tu proyecto <span class="text-[#0039C6]">*</span>
@@ -248,9 +254,9 @@
               name="proyecto"
               rows="4"
               required
-              placeholder="Describe tu idea, tu marca y lo que necesitas..."
+              placeholder="Cuéntame sobre tus objetivos, plazos y visión para este proyecto..."
               aria-invalid={!!errores.proyecto}
-              class="bg-white border border-slate-300 rounded-lg px-4 py-3 text-sm outline-none resize-none focus:border-[#0039C6] focus:ring-1 focus:ring-[#0039C6] transition"
+              class="bg-white border border-slate-200 rounded-lg px-4 py-3 text-sm outline-none resize-none focus:border-[#0039C6] focus:ring-1 focus:ring-[#0039C6] transition"
               class:border-red-500={!!errores.proyecto}
             ></textarea>
             {#if errores.proyecto}
@@ -258,12 +264,15 @@
             {/if}
           </div>
 
-          <button
-            type="submit"
-            class="self-start inline-flex items-center gap-2 bg-[#0039C6] text-white px-8 py-4 rounded-lg font-plusjack font-bold text-xs uppercase tracking-wider hover:bg-blue-800 transition"
-          >
-            Enviar mensaje <span class="text-base">→</span>
-          </button>
+          <!-- Botón de enviar alineado a la derecha -->
+          <div class="flex justify-end mt-2">
+            <button
+              type="submit"
+              class="inline-flex items-center gap-2 bg-[#0039C6] text-white px-8 py-4 rounded-lg font-plusjack font-bold text-xs uppercase tracking-wider hover:bg-blue-800 transition shadow-sm"
+            >
+              Enviar mensaje <span class="text-base">→</span>
+            </button>
+          </div>
         </form>
       {/if}
 
