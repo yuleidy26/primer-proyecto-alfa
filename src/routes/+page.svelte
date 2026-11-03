@@ -8,7 +8,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       subtitulo: "SISTEMA VISUAL",
       titulo: 'Versiones & Adaptabilidad',
       descripcion: 'Desarrollo del logotipo y sus variantes cromáticas para garantizar una presencia visual limpia y funcional. El diseño está optimizado para adaptarse con claridad a formatos cuadrados de redes sociales, fotos de perfil y piezas promocionales impresas.',
-      imagen: '/Captura de pantalla.png'
+      imagen: '/guao.webp'
     },
     {
       subtitulo: "APLICACIÓN REAL DE MARCA",
