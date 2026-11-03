@@ -19,3 +19,7 @@
 @theme {
  --font-plusjack: "Jack"; 
 }
+
+html {
+  scroll-behavior: smooth;
+}
