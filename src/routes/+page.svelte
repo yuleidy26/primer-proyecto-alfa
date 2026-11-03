@@ -498,33 +498,33 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   <!-- Contenedor principal de la sección (Grid de 12 columnas) -->
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
     
-    <!-- Columna 1: Descripción, Impacto & Viñetas (Ocupa 4 columnas) -->
-    <div class="lg:col-span-4 flex flex-col gap-6 font-plusjack">
+    <!-- Columna 1: Descripción, Impacto & Viñetas (Ocupa 4 columnas, con mejor separación y tamaño ajustado) -->
+    <div class="lg:col-span-4 flex flex-col gap-8 font-plusjack">
       <p class="text-sm md:text-base text-[#4A4542] leading-relaxed">
         Diseño de piezas publicitarias para redes sociales enfocadas en marcas como Sony y Guao. La misión principal fue crear contenidos comerciales atractivos equilibrando la fotografía de producto con la información clave de venta: especificaciones, promociones y llamadas a la acción inmediatas.
       </p>
 
       <!-- Bloque destacado con borde izquierdo azul -->
-      <div class="pl-4 border-l-2 border-[#0039C6] flex flex-col gap-1.5 py-1">
-        <p class="text-xs font-bold uppercase tracking-wider text-[#0039C6]">
+      <div class="pl-4 border-l-2 border-[#0039C6] flex flex-col gap-2 py-1">
+        <p class="text-sm font-bold uppercase tracking-wider text-[#0039C6]">
           IMPACTO & CONVERSIÓN
         </p>
-        <p class="text-xs text-[#645D58] leading-relaxed">
+        <p class="text-sm text-[#645D58] leading-relaxed">
           Jerarquía visual optimizada para la conversión comercial en redes, combinando claridad de producto con llamados a la acción inmediatos.
         </p>
       </div>
 
       <!-- Lista de puntos de verificación -->
-      <div class="flex flex-col gap-3 pt-2">
-        <div class="flex items-start gap-2.5">
-          <span class="text-[#0039C6] text-xs font-bold mt-0.5">✓</span>
-          <p class="text-xs text-[#1B1B1F] font-medium leading-tight">
+      <div class="flex flex-col gap-4 pt-2">
+        <div class="flex items-start gap-3">
+          <span class="text-[#0039C6] text-sm font-bold mt-0.5">✓</span>
+          <p class="text-sm text-[#1B1B1F] font-medium leading-tight">
             Composición tipográfica legible en pantallas móviles
           </p>
         </div>
-        <div class="flex items-start gap-2.5">
-          <span class="text-[#0039C6] text-xs font-bold mt-0.5">✓</span>
-          <p class="text-xs text-[#1B1B1F] font-medium leading-tight">
+        <div class="flex items-start gap-3">
+          <span class="text-[#0039C6] text-sm font-bold mt-0.5">✓</span>
+          <p class="text-sm text-[#1B1B1F] font-medium leading-tight">
             Saturación cromática deliberada para retención visual
           </p>
         </div>
@@ -533,23 +533,23 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
     <!-- Columna 2: Sony WH-1000XM6 Feed 1:1 (Ocupa 4 columnas) -->
     <div class="lg:col-span-4 flex flex-col gap-4">
-      <div class="relative w-full aspect-square bg-[#1B1B1F] overflow-hidden shadow-sm">
-        <!-- FOTO DE SONY (FEED 1:1) -->
+      <div class="relative w-full max-w-[340px] mx-auto aspect-square bg-[#1B1B1F] overflow-hidden shadow-sm">
+        <!-- FOTO DE SONY (FEED 1:1) - Ocupando todo el contenedor sin márgenes negros -->
         <img 
           src="Yuleidy-Amaya-Post-de-redes-sociales.webp" 
           alt="Sony WH-1000XM6 Post Promocional" 
           class="w-full h-full object-cover object-center"
         >
         <!-- Badge superior derecho dentro de la foto -->
-        <div class="absolute top-4 right-4 bg-[#1B1B1F]/80 backdrop-blur-xs text-white px-2.5 py-1 text-[10px] font-plusjack uppercase tracking-widest font-semibold rounded-xs z-10">
+        <div class="absolute top-3 right-3 bg-[#1B1B1F]/80 backdrop-blur-xs text-white px-2 py-0.5 text-[9px] font-plusjack uppercase tracking-widest font-semibold rounded-xs z-10">
           FEED 1:1
         </div>
       </div>
 
       <!-- Pie explicativo de Sony -->
-      <div class="flex flex-col gap-1 font-plusjack">
+      <div class="flex flex-col gap-1 font-plusjack max-w-[340px] mx-auto w-full">
         <div class="flex justify-between items-baseline">
-          <h3 class="text-base font-semibold text-[#1B1B1F]">
+          <h3 class="text-sm font-semibold text-[#1B1B1F]">
             Sony WH-1000XM6 Post Promocional
           </h3>
           <span class="text-xs font-bold text-[#0039C6]">1080×1080</span>
@@ -563,7 +563,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     <!-- Columna 3: Guao Post/Flyer Stories 9:16 (Ocupa 4 columnas con marco gris) -->
     <div class="lg:col-span-4 flex flex-col gap-4">
       <!-- Marco cuadrado exterior gris que contiene la pieza vertical de Guao centrada -->
-      <div class="relative w-full aspect-square bg-[#E5E7EB] overflow-hidden shadow-sm flex items-center justify-center p-2">
+      <div class="relative w-full max-w-[340px] mx-auto aspect-square bg-[#E5E7EB] overflow-hidden shadow-sm flex items-center justify-center p-3">
         <!-- FOTO DE GUAO (Vertical completa sin estirar ni cortar) -->
         <img 
           src="publicidad-guao_Mesa-de-trabajo-1.webp" 
@@ -571,15 +571,15 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
           class="h-full w-auto object-contain object-center shadow-xs"
         >
         <!-- Badge superior derecho dentro del marco -->
-        <div class="absolute top-4 right-4 bg-[#1B1B1F]/80 backdrop-blur-xs text-white px-2.5 py-1 text-[10px] font-plusjack uppercase tracking-widest font-semibold rounded-xs z-10">
+        <div class="absolute top-3 right-3 bg-[#1B1B1F]/80 backdrop-blur-xs text-white px-2 py-0.5 text-[9px] font-plusjack uppercase tracking-widest font-semibold rounded-xs z-10">
           VERTICAL 9:16
         </div>
       </div>
 
       <!-- Pie explicativo de Guao -->
-      <div class="flex flex-col gap-1 font-plusjack">
+      <div class="flex flex-col gap-1 font-plusjack max-w-[340px] mx-auto w-full">
         <div class="flex justify-between items-baseline">
-          <h3 class="text-base font-semibold text-[#1B1B1F]">
+          <h3 class="text-sm font-semibold text-[#1B1B1F]">
             Guao Post/Flyer
           </h3>
           <span class="text-xs font-bold text-[#D97706]">1080×1920</span>
@@ -593,5 +593,21 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   </div>
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <Formulario />
