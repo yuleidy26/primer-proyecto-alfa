@@ -1,5 +1,9 @@
 import { fail } from '@sveltejs/kit';
 import { z } from 'zod';
+import { Resend } from 'resend';
+import { RESEND_API_KEY } from '$app/env/private';
+
+const resend = new Resend(RESEND_API_KEY);
 
 const esquemaContacto = z.object({
 	nombre: z.string().trim().min(2, 'Ingresa tu nombre'),
@@ -30,6 +34,33 @@ export const actions = {
 			});
 		}
 
-		return { exito: true };
+		try {
+    const { data, error } = await resend.emails.send({
+        from: 'Portafolio Yule <onboarding@resend.dev>',
+		replyTo: valores.correo,
+		to: ['yuleidyamaya2020@gmail.com'],
+        subject: 'Nuevo mensaje desde mi portafolio',
+        text: `
+Nombre: ${valores.nombre}
+Correo: ${valores.correo}
+Tipo de empresa: ${valores.tipo}
+Servicios: ${valores.servicios.join(', ')}
+
+Descripción del proyecto:
+${valores.proyecto}
+        `
+    });
+
+    if (error) {
+        console.error('Error al enviar el correo:', error);
+        return fail(500, { errorEnvio: 'No se pudo enviar el mensaje.' });
+    }
+
+    return { exito: true };
+
+} catch (error) {
+    console.error('Error inesperado:', error);
+    return fail(500, { errorEnvio: 'Ocurrió un error al enviar el mensaje.' });
+}
 	}
 };

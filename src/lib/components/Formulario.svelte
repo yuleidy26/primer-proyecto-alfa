@@ -3,6 +3,7 @@
   import Icon from "@iconify/svelte";
 
   let enviado = $state(false);
+  let errorEnvio = $state('');
   /** @type {string[]} */
   let servicios = $state([]);
   /** @type {Record<string, string[] | undefined>} */
@@ -21,24 +22,29 @@
     }
   }
 
-  /** @type {import('$app/forms').SubmitFunction} */
-  const manejarEnvio = () => {
+ /** @type {import('$app/forms').SubmitFunction} */
+const manejarEnvio = () => {
     return async ({ result, update }) => {
-      await update();
+        await update();
 
-      if (result.type === 'failure') {
-        errores = result.data?.errores ?? {};
-        enviado = false;
-      } else if (result.type === 'success') {
-        errores = {};
-        enviado = true;
-        servicios = [];
-      } else {
-        errores = {};
-        enviado = false;
-      }
+        if (result.type === 'failure') {
+            errores = result.data?.errores ?? {};
+            errorEnvio = result.data?.errorEnvio ?? '';
+            enviado = false;
+
+        } else if (result.type === 'success') {
+            errores = {};
+            errorEnvio = '';
+            enviado = true;
+            servicios = [];
+
+        } else {
+            errores = {};
+            errorEnvio = '';
+            enviado = false;
+        }
     };
-  };
+};
 </script>
 
 <section id="CONTACTO" class="formulario bg-white text-slate-900 px-6 md:px-12 py-20">
@@ -274,6 +280,12 @@
               Enviar mensaje <span class="text-base">→</span>
             </button>
           </div>
+          {#if errorEnvio}
+          <p class="text-sm text-red-600 font-plusjack" role="alert">
+            {errorEnvio}
+          </p>
+          {/if}
+          
         </form>
       {/if}
 
