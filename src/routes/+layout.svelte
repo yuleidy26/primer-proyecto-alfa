@@ -42,10 +42,10 @@
         <p class="uppercase font-medium text-zinc-700 text-xs">Yuleidy Amaya - Portafolio</p>
     </div>
     <div class="flex gap-10 font-medium text-zinc-700 text-xs">
-      <a href="#inicio" class="uppercase hover:text-[#004CFF] transition-colors duration-200">INICIO</a>
-      <a href="#sobre-mi" class="uppercase hover:text-[#004CFF] transition-colors duration-200">SOBRE MÍ</a>
-      <a href="#proyectos" class="uppercase hover:text-[#004CFF] transition-colors duration-200">PROYECTOS</a>
-      <a href="#contacto" class="uppercase hover:text-[#004CFF] transition-colors duration-200">CONTACTO</a>
+      <a href="#INICIO" class="uppercase hover:text-[#004CFF] transition-colors duration-200">INICIO</a>
+      <a href="#SOBRE-MI" class="uppercase hover:text-[#004CFF] transition-colors duration-200">SOBRE MÍ</a>
+      <a href="#PROYECTOS" class="uppercase hover:text-[#004CFF] transition-colors duration-200">PROYECTOS</a>
+      <a href="#CONTACTO" class="uppercase hover:text-[#004CFF] transition-colors duration-200">CONTACTO</a>
     </div>
 </header>
 
@@ -60,13 +60,13 @@
         </div>
 
         <div class="flex justify-end gap-6 font-plusjack font-light text-xs">
-            <a href="#inicio" class="uppercase hover:text-slate-200 transition-colors duration-200">INICIO</a>
+            <a href="#INICIO" class="uppercase hover:text-slate-200 transition-colors duration-200">INICIO</a>
             <span>•</span>
-            <a href="#sobre-mi" class="uppercase hover:text-slate-200 transition-colors duration-200">SOBRE MÍ</a>
+            <a href="#SOBRE-MI" class="uppercase hover:text-slate-200 transition-colors duration-200">SOBRE MÍ</a>
             <span>•</span>
-            <a href="#proyectos" class="uppercase hover:text-slate-200 transition-colors duration-200">PROYECTOS</a>
+            <a href="#PROYECTOS" class="uppercase hover:text-slate-200 transition-colors duration-200">PROYECTOS</a>
             <span>•</span>
-            <a href="#contacto" class="uppercase hover:text-slate-200 transition-colors duration-200">CONTACTO</a>
+            <a href="#CONTACTO" class="uppercase hover:text-slate-200 transition-colors duration-200">CONTACTO</a>
         </div>
     </div>
 <hr class="border-blue-400 opacity-40 my-2">
