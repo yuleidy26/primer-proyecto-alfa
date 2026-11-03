@@ -298,7 +298,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
         <p>PROYECTO 02 / CASO DE ESTUDIO CONCEPTUAL</p>
       </div>
       <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
-        NOTION — Caso de  Estudio: Papelería <br> Corporativa
+        NOTION — Caso de Estudio: Papelería <br> Corporativa
       </h1>
     </div>
 
@@ -318,7 +318,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     <div class="lg:col-span-7 flex flex-col gap-6">
       <div class="relative w-full rounded-xl overflow-hidden shadow-md bg-white">
         
-        <!-- ESPACIO PARA LA FOTO PRINCIPAL: Cambia 'ruta-de-tu-imagen.webp' por tu archivo -->
+        <!-- ESPACIO PARA LA FOTO PRINCIPAL -->
         <img 
           src="Papelería-minimalista-de-Notion-sobre-madera.webp" 
           alt="Notion - Caso de Estudio Papelería Corporativa" 
@@ -332,11 +332,11 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       </div>
     </div>
 
-    <!-- Columna Derecha: Tarjetas y Objetivo del caso (Ocupa 5 columnas) -->
+    <!-- Columna Derecha: Tarjetas, Línea divisoria y Objetivo del caso (Ocupa 5 columnas) -->
     <div class="lg:col-span-5 flex flex-col gap-6">
       
-      <!-- Tarjeta 01 -->
-      <div class="bg-white p-6 md:p-8 rounded-xl border border-slate-200/80 shadow-xs flex flex-col gap-3">
+      <!-- Tarjeta 01 (Puntas cuadradas) -->
+      <div class="bg-white p-6 md:p-8 border border-slate-200/80 shadow-xs flex flex-col gap-3">
         <p class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
           01 / TARJETAS DE PRESENTACIÓN
         </p>
@@ -348,8 +348,8 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
         </p>
       </div>
 
-      <!-- Tarjeta 02 -->
-      <div class="bg-white p-6 md:p-8 rounded-xl border border-slate-200/80 shadow-xs flex flex-col gap-3">
+      <!-- Tarjeta 02 (Puntas cuadradas) -->
+      <div class="bg-white p-6 md:p-8 border border-slate-200/80 shadow-xs flex flex-col gap-3">
         <p class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
           02 / SISTEMA DE PAPELERÍA
         </p>
@@ -361,8 +361,11 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
         </p>
       </div>
 
+      <!-- Línea de separación gris justo debajo de las tarjetas blancas -->
+      <hr class="border-slate-300 my-1">
+
       <!-- Texto inferior: Objetivo del caso -->
-      <div class="pt-2 font-plusjack">
+      <div class="font-plusjack">
         <p class="text-xs font-bold uppercase tracking-wider text-[#1B1B1F] mb-1">
           OBJETIVO DEL CASO:
         </p>
@@ -376,8 +379,5 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   </div>
 
 </section>
-
-
-
 
 <Formulario />
