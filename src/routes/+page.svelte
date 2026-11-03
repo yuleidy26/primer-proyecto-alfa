@@ -46,10 +46,14 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       </p>
     </div>
 
-      <div class="flex justify-center">
+       <div class="flex justify-center">
+
       <div class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden bg-white flex items-center justify-center shadow-lg">
+
         <img src="/logo.webp" alt="Avatar de Yuleidy Amaya" class="w-full h-full object-cover" />
+
       </div>
+
     </div>
 
         <div class="flex-1 text-8xl text-right font-playfair font-bold">
@@ -82,7 +86,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
          <p>Me apasiona el diseño de identidades visuales, buscando siempre el equilibrio entre lo funcional y <br>
             lo creativo. Mi objetivo es transformar conceptos en piezas gráficas estratégicas que potencien la <br>
             presencia de una marca tanto en plataformas digitales como en medios impresos tradicionales.</p>
-        </div>
+         </div>
 
      </div>
 
@@ -198,7 +202,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
             </div>
 
         </div>
-           
+         
 
      </div>
 
@@ -240,7 +244,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
         <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
       </div>
       <!-- Imagen de la laptop -->
-      <img src="Scene-_8.webp" alt="computadora" class="w-full h-auto object-cover">
+      <img src="Scene-_8.webp" alt="computadora" class="w-full h-auto object-cover rounded-lg">
     </div>
     
     <!-- Columna derecha: Textos y paleta -->
@@ -260,7 +264,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       </p>
 
       <!-- Paleta de colores simétrica en 4 columnas con sus textos -->
-      <div class="grid grid-cols-4 w-full h-12 rounded-md overflow-hidden border border-slate-200 shadow-sm">
+      <div class="grid grid-cols-4 w-full h-12 rounded-lg overflow-hidden border border-slate-200 shadow-sm">
         <div class="bg-[#FF5500] flex items-center justify-center text-[10px] text-white font-mono font-bold">#FF5500</div>
         <div class="bg-[#F7E9C3] flex items-center justify-center text-[10px] text-[#645D58] font-mono font-bold">#F7E9C3</div>
         <div class="bg-white flex items-center justify-center text-[10px] text-slate-400 font-mono font-bold border-x border-slate-200">#FFFFFF</div>
@@ -316,13 +320,13 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     
     <!-- Columna Izquierda: Imagen principal grande (Ocupa 7 columnas) -->
     <div class="lg:col-span-7 flex flex-col gap-6">
-      <div class="relative w-full rounded-xl overflow-hidden shadow-md bg-white">
+      <div class="relative w-full rounded-lg overflow-hidden shadow-md bg-white">
         
         <!-- ESPACIO PARA LA FOTO PRINCIPAL -->
         <img 
           src="Papelería-minimalista-de-Notion-sobre-madera.webp" 
           alt="Notion - Caso de Estudio Papelería Corporativa" 
-          class="w-full h-[380px] sm:h-[460px] md:h-[520px] object-cover object-center"
+          class="w-full h-[380px] sm:h-[460px] md:h-[520px] object-cover object-center rounded-lg"
         >
 
         <!-- Etiqueta flotante inferior izquierda dentro de la foto -->
@@ -418,6 +422,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
           <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
             TOLERANCIA 0.05 MM
           </span>
+
         </div>
 
         <!-- FOTO IZQUIERDA (Grande y perfectamente centrada) -->
@@ -425,7 +430,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
           <img 
             src="Vectorización-Conejo_Mesa-de-trabajo-1.webp" 
             alt="Representación topológica de la liebre - Veltrix" 
-            class="w-full h-auto max-h-[460px] object-contain"
+            class="w-full h-auto max-h-[460px] object-contain rounded-lg"
           >
         </div>
       </div>
@@ -442,11 +447,11 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     <div class="lg:col-span-5 flex flex-col gap-6">
       
       <!-- Contenedor de la foto de la gorra -->
-      <div class="bg-white border border-slate-200/80 shadow-sm overflow-hidden w-full h-[260px] sm:h-[300px]">
+      <div class="bg-white border border-slate-200/80 shadow-sm overflow-hidden w-full h-[260px] sm:h-[300px] rounded-lg">
         <img 
           src="Yuleidy-Amaya-Mockup_1.webp" 
           alt="Aplicación de marca en gorra Veltrix" 
-          class="w-full h-full object-cover object-center"
+          class="w-full h-full object-cover object-center rounded-lg"
         >
       </div>
 
@@ -533,12 +538,12 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
     <!-- Columna 2: Sony WH-1000XM6 Feed 1:1 (Ocupa 4 columnas) -->
     <div class="lg:col-span-4 flex flex-col gap-4">
-      <div class="relative w-full max-w-[340px] mx-auto aspect-square bg-[#1B1B1F] overflow-hidden shadow-sm">
+      <div class="relative w-full max-w-[340px] mx-auto aspect-square bg-[#1B1B1F] overflow-hidden shadow-sm rounded-lg">
         <!-- FOTO DE SONY (FEED 1:1) - Ocupando todo el contenedor sin márgenes negros -->
         <img 
           src="Yuleidy-Amaya-Post-de-redes-sociales.webp" 
           alt="Sony WH-1000XM6 Post Promocional" 
-          class="w-full h-full object-cover object-center"
+          class="w-full h-full object-cover object-center rounded-lg"
         >
         <!-- Badge superior derecho dentro de la foto -->
         <div class="absolute top-3 right-3 bg-[#1B1B1F]/80 backdrop-blur-xs text-white px-2 py-0.5 text-[9px] font-plusjack uppercase tracking-widest font-semibold rounded-xs z-10">
@@ -563,12 +568,12 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     <!-- Columna 3: Guao Post/Flyer Stories 9:16 (Ocupa 4 columnas con marco gris) -->
     <div class="lg:col-span-4 flex flex-col gap-4">
       <!-- Marco cuadrado exterior gris que contiene la pieza vertical de Guao centrada -->
-      <div class="relative w-full max-w-[340px] mx-auto aspect-square bg-[#E5E7EB] overflow-hidden shadow-sm flex items-center justify-center p-3">
+      <div class="relative w-full max-w-[340px] mx-auto aspect-square bg-[#E5E7EB] overflow-hidden shadow-sm flex items-center justify-center p-3 rounded-lg">
         <!-- FOTO DE GUAO (Vertical completa sin estirar ni cortar) -->
         <img 
           src="publicidad-guao_Mesa-de-trabajo-1.webp" 
           alt="Guao Post/Flyer" 
-          class="h-full w-auto object-contain object-center shadow-xs"
+          class="h-full w-auto object-contain object-center shadow-xs rounded-lg"
         >
         <!-- Badge superior derecho dentro del marco -->
         <div class="absolute top-3 right-3 bg-[#1B1B1F]/80 backdrop-blur-xs text-white px-2 py-0.5 text-[9px] font-plusjack uppercase tracking-widest font-semibold rounded-xs z-10">
@@ -627,7 +632,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       <img 
         src="Revista-Yuleidy-Amaya-nuevo.webp" 
         alt="Vogue - Caso de Estudio Portada Editorial" 
-        class="w-full max-w-[620px] h-auto object-contain shadow-2xl"
+        class="w-full max-w-[620px] h-auto object-contain shadow-2xl rounded-lg"
       >
     </div>
 
