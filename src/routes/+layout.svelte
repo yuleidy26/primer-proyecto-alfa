@@ -14,10 +14,10 @@
         <p class="uppercase font-medium text-zinc-700 text-xs">Yuleidy Amaya - Portafolio</p>
     </div>
     <div class="flex gap-10 uppercase font-medium text-zinc-700 text-xs">
-      <a href="#INICIO">INICIO</a>
-      <a href="#SOBRE-MI">SOBRE MÍ</a>
-      <a href="#PROYECTOS">PROYECTOS</a>
-      <a href="#CONTACTO">CONTACTO</a>
+      <a href="#INICIO" class="uppercase hover:text-[#004CFF] transition-colors duration-200">INICIO</a>
+      <a href="#SOBRE-MI" class="uppercase hover:text-[#004CFF] transition-colors duration-200">SOBRE MÍ</a>
+      <a href="#PROYECTOS" class="uppercase hover:text-[#004CFF] transition-colors duration-200">PROYECTOS</a>
+      <a href="#CONTACTO" class="uppercase hover:text-[#004CFF] transition-colors duration-200">CONTACTO</a>
     </div>
 </header>
 
