@@ -605,8 +605,8 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
         <p>PROYECTO 05 / DIRECCIÓN DE ARTE EDITORIAL</p>
       </div>
       <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
-        VOGUE — Caso de <br>
-        Estudio: Portada Editorial
+        VOGUE — Caso de 
+        Estudio: <br> Portada Editorial
       </h1>
     </div>
 
@@ -622,16 +622,13 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   <!-- Contenedor principal de la sección (Grid de 12 columnas) -->
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
     
-    <!-- Columna Izquierda: Portada Editorial de Vogue (Ocupa 7 columnas) -->
-    <div class="lg:col-span-7 bg-white p-6 md:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
-      <div class="w-full flex items-center justify-center">
-        <!-- ESPACIO PARA LA FOTO DE LA PORTADA EDITORIAL -->
-        <img 
-          src="Revista-Yuleidy-Amaya-nuevo.webp" 
-          alt="Vogue - Caso de Estudio Portada Editorial" 
-          class="w-full h-auto max-h-[720px] object-contain object-center shadow-xs"
-        >
-      </div>
+    <!-- Columna Izquierda: Solo la imagen de la revista con sombra directa -->
+    <div class="lg:col-span-7 flex justify-center">
+      <img 
+        src="Revista-Yuleidy-Amaya-nuevo.webp" 
+        alt="Vogue - Caso de Estudio Portada Editorial" 
+        class="w-full max-w-[500px] h-auto object-contain shadow-2xl"
+      >
     </div>
 
     <!-- Columna Derecha: Fichas 01, 02 y 03 (Ocupa 5 columnas) -->
