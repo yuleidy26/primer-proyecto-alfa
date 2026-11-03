@@ -20,7 +20,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 </script>
 
 
-<section class="relative bg-blue-600 text-white px-12 py-12 min-h-[85vh] flex flex-col justify-between overflow-hidden">
+<section  id="INICIO"  class="relative bg-blue-600 text-white px-12 py-12 min-h-[85vh] flex flex-col justify-between overflow-hidden">
 
 <!-- Texto Gigante de Fondo (Marca de Agua) -->
   <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0">
@@ -59,7 +59,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     </div>
 
     <div class="z-10 mt-6">
-    <a href="#proyectos" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider font-medium hover:underline">
+    <a href="#PROYECTOS" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider font-medium hover:underline">
       DESCUBRIR PROYECTOS <span class="text-base">↓</span>
     </a>
   </div>
@@ -67,7 +67,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 </section>
 
 <!-- Sección Sobre Mí -->
-<section class="bg-[#FCF8FE] text-slate-900 px-12 py-24">
+<section  id="SOBRE-MI"  class="bg-[#FCF8FE] text-slate-900 px-12 py-24">
     <!-- Cuadro superior naranja -->
      <div class="max-w-5xl flex flex-col gap-6 ">
 
@@ -207,7 +207,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
 
 <!-- Proyecto 1 -->
-<section class="bg-[#FFF4ED] text-slate-900 px-12 py-24">
+<section  id="PROYECTOS"  class="bg-[#FFF4ED] text-slate-900 px-12 py-24">
 
   <!-- Encabezado superior -->
   <div class="flex justify-between items-start mb-16">

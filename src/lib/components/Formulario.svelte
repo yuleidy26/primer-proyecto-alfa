@@ -41,7 +41,7 @@
   };
 </script>
 
-<section id="Contacto" class="formulario bg-white text-slate-900 px-6 md:px-12 py-20">
+<section id="CONTACTO" class="formulario bg-white text-slate-900 px-6 md:px-12 py-20">
   <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
     <!-- Columna Izquierda: Títulos y Tarjetas de Contacto -->

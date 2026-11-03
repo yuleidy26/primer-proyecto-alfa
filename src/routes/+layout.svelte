@@ -9,15 +9,15 @@
     <link rel="icon" href={favicon} />
 </svelte:head>
 
-<header class="flex justify-between px-10 py-5">
+<header class="flex justify-between px-10 py-5 sticky top-0 bg-white/80 backdrop-blur-md z-50">
     <div>
         <p class="uppercase font-medium text-zinc-700 text-xs">Yuleidy Amaya - Portafolio</p>
     </div>
     <div class="flex gap-10 uppercase font-medium text-zinc-700 text-xs">
-      <a href="#Inicio">Inicio</a>
-       <a href="#sobre-mi">SOBRE MÍ</a>
-        <a href="#Proyectos">Proyectos</a>
-         <a href="#Contacto">Contacto</a>
+      <a href="#INICIO">INICIO</a>
+      <a href="#SOBRE-MI">SOBRE MÍ</a>
+      <a href="#PROYECTOS">PROYECTOS</a>
+      <a href="#CONTACTO">CONTACTO</a>
     </div>
 </header>
 
@@ -33,13 +33,13 @@
         </div>
 
         <div class="flex justify-end gap-6 uppercase font-plusjack font-light text-xs">
-            <a href="#Inicio">Inicio</a>
+            <a href="#INICIO">INICIO</a>
             <span>•</span>
-            <a href="#Sobre-mi">Sobre mí</a>
+            <a href="#SOBRE-MI">SOBRE MÍ</a>
             <span>•</span>
-            <a href="#Proyectos">Proyectos</a>
+            <a href="#PROYECTOS">PROYECTOS</a>
             <span>•</span>
-            <a href="#Contacto">Contacto</a>
+            <a href="#CONTACTO">CONTACTO</a>
         </div>
     </div>
 <hr class="border-blue-400 opacity-40 my-2">
