@@ -594,20 +594,92 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
 </section>
 
+<!-- Proyecto 5: VOGUE — Caso de Estudio: Portada Editorial -->
+<section class="bg-[#EBF3FF] text-slate-900 px-6 md:px-12 py-20 md:py-24">
 
+  <!-- Encabezado superior -->
+  <div class="flex flex-col lg:flex-row justify-between items-start mb-16 gap-6">
+    <!-- Título principal -->
+    <div>
+      <div class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider mb-3">
+        <p>PROYECTO 05 / DIRECCIÓN DE ARTE EDITORIAL</p>
+      </div>
+      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
+        VOGUE — Caso de <br>
+        Estudio: Portada Editorial
+      </h1>
+    </div>
 
+    <!-- Metadatos académicos (derecha) -->
+    <div class="text-xs font-plusjack text-right flex flex-col lg:items-end">
+      <p class="text-[#645D58] font-bold mb-1 uppercase tracking-wider">PROYECTO ACADÉMICO</p>
+      <p class="text-[#1B1B1F] font-medium max-w-[260px] leading-relaxed">
+        Diseño Editorial & Dirección de Arte
+      </p>
+    </div>
+  </div>
 
+  <!-- Contenedor principal de la sección (Grid de 12 columnas) -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+    
+    <!-- Columna Izquierda: Portada Editorial de Vogue (Ocupa 7 columnas) -->
+    <div class="lg:col-span-7 bg-white p-6 md:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+      <div class="w-full flex items-center justify-center">
+        <!-- ESPACIO PARA LA FOTO DE LA PORTADA EDITORIAL -->
+        <img 
+          src="Revista-Yuleidy-Amaya-nuevo.webp" 
+          alt="Vogue - Caso de Estudio Portada Editorial" 
+          class="w-full h-auto max-h-[720px] object-contain object-center shadow-xs"
+        >
+      </div>
+    </div>
 
+    <!-- Columna Derecha: Fichas 01, 02 y 03 (Ocupa 5 columnas) -->
+    <div class="lg:col-span-5 flex flex-col gap-6">
+      
+      <!-- Ficha 01 / Integración Visual & Profundidad -->
+      <div class="bg-white p-6 md:p-7 border border-slate-200/80 shadow-xs flex flex-col gap-3 font-plusjack">
+        <p class="uppercase text-[#0039C6] font-bold text-[11px] tracking-wider">
+          FICHA 01 / COMPOSICIÓN & MOCKUP
+        </p>
+        <h2 class="text-[#1B1B1F] font-playfair text-xl md:text-2xl font-normal leading-snug">
+          Integración Visual & Profundidad
+        </h2>
+        <p class="text-sm text-[#4A4542] leading-relaxed">
+          Superposición fluida entre el personaje y la icónica cabecera de Vogue, creando un efecto tridimensional que resalta al sujeto sin perder la presencia de la marca.
+        </p>
+      </div>
 
+      <!-- Ficha 02 / Estilo Editorial & Tono de Voz -->
+      <div class="bg-white p-6 md:p-7 border border-slate-200/80 shadow-xs flex flex-col gap-3 font-plusjack">
+        <p class="uppercase text-[#0039C6] font-bold text-[11px] tracking-wider">
+          FICHA 02 / IDENTIDAD DE MARCA
+        </p>
+        <h2 class="text-[#1B1B1F] font-playfair text-xl md:text-2xl font-normal leading-snug">
+          Estilo Editorial & Tono de Voz
+        </h2>
+        <p class="text-sm text-[#4A4542] leading-relaxed">
+          Jerarquía tipográfica inspirada en la revista, combinando la elegancia de la alta moda con el dinamismo del deporte olímpico.
+        </p>
+      </div>
 
+      <!-- Ficha 03 / Objetivo del Caso -->
+      <div class="bg-white p-6 md:p-7 border border-slate-200/80 shadow-xs flex flex-col gap-3 font-plusjack">
+        <p class="uppercase text-[#0039C6] font-bold text-[11px] tracking-wider">
+          FICHA 03 / OBJETIVO DEL CASO
+        </p>
+        <h2 class="text-[#1B1B1F] font-playfair text-xl md:text-2xl font-normal leading-snug">
+          Objetivo del Caso
+        </h2>
+        <p class="text-sm text-[#4A4542] leading-relaxed">
+          Ejercicio de diseño enfocado en adaptar una marca de alto prestigio a un nuevo concepto visual, respetando de principio a fin su identidad, tipografía y estilo.
+        </p>
+      </div>
 
+    </div>
 
+  </div>
 
-
-
-
-
-
-
+</section>
 
 <Formulario />
