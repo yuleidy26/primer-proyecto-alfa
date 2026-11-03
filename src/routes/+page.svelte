@@ -380,4 +380,96 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
 </section>
 
+<!-- Proyecto 3: Veltrix — Síntesis Geométrica & Imagotipo -->
+<section class="bg-[#EBF3FF] text-slate-900 px-6 md:px-12 py-20 md:py-24">
+
+  <!-- Encabezado superior -->
+  <div class="flex flex-col lg:flex-row justify-between items-start mb-16 gap-6">
+    <!-- Título principal -->
+    <div>
+      <div class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider mb-3">
+        <p>PROYECTO 03 / VECTORIZACIÓN & SÍNTESIS GRÁFICA</p>
+      </div>
+      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
+        VELTRIX — Síntesis <br> Geométrica & Imagotipo
+      </h1>
+    </div>
+
+    <!-- Metadatos académicos (derecha) -->
+    <div class="text-xs font-plusjack text-right flex flex-col lg:items-end">
+      <p class="text-[#645D58] font-bold mb-1 uppercase tracking-wider">ENTORNO: ADOBE ILLUSTRATOR</p>
+      <p class="text-[#1B1B1F] font-medium max-w-[260px] leading-relaxed">
+        Bocetaje Manual • Síntesis Vectorial • Retícula • Biomórfica
+      </p>
+    </div>
+  </div>
+
+  <!-- Contenedor principal de la sección (Grid de 12 columnas) -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+    
+    <!-- Columna Izquierda: Tarjeta grande con la representación topológica (Ocupa 7 columnas) -->
+    <div class="lg:col-span-7 bg-white p-6 md:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+      <div>
+        <!-- Subtítulo de la tarjeta superior -->
+        <div class="flex justify-between items-center pb-4 border-b border-slate-100 mb-6 font-plusjack">
+          <span class="text-[11px] uppercase font-bold tracking-widest text-[#0039C6]">
+            REPRESENTACIÓN TOPOLÓGICA DE LA LIEBRE
+          </span>
+          <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+            TOLERANCIA 0.05 MM
+          </span>
+        </div>
+
+        <!-- ESPACIO PARA LA FOTO IZQUIERDA -->
+        <div class="w-full flex items-center justify-center my-4">
+          <img 
+            src="Vectorización-Conejo_Mesa-de-trabajo-1.webp" 
+            alt="Representación topológica de la liebre - Veltrix" 
+            class="w-full h-auto max-h-[440px] object-contain"
+          >
+        </div>
+      </div>
+
+      <!-- Pie de foto o nota inferior -->
+      <div class="pt-6 border-t border-slate-100 font-plusjack">
+        <p class="text-xs text-[#4A4542] leading-relaxed">
+          Versiones optimizadas para fondo claro, fondo oscuro y aplicación sobre color corporativo puro.
+        </p>
+      </div>
+    </div>
+
+    <!-- Columna Derecha: Imagen superior de gorra + Tarjeta de información (Ocupa 5 columnas) -->
+    <div class="lg:col-span-5 flex flex-col gap-6">
+      
+      <!-- Contenedor de la foto de la gorra -->
+      <div class="bg-white p-4 border border-slate-200/80 shadow-sm">
+        <!-- ESPACIO PARA LA FOTO DE LA GORRA -->
+        <img 
+          src="Yuleidy-Amaya-Mockup_1.webp" 
+          alt="Aplicación de marca en gorra Veltrix" 
+          class="w-full h-[240px] sm:h-[280px] object-cover object-center"
+        >
+      </div>
+
+      <!-- Tarjeta 02 / Reducción al esencial (Puntas cuadradas) -->
+      <div class="bg-white p-6 md:p-8 border border-slate-200/80 shadow-xs flex flex-col gap-3">
+        <p class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
+          REDUCCIÓN AL ESENCIAL
+        </p>
+        <h2 class="text-[#1B1B1F] font-playfair text-2xl md:text-3xl font-normal leading-snug">
+          Estructura geométrica para una identidad versátil.
+        </h2>
+        <p class="font-plusjack text-sm text-[#4A4542] leading-relaxed">
+          Veltrix es un imagotipo basado en la síntesis gráfica de un conejo. El proceso consistió en transformar un boceto hecho a mano en un imagotipo geométrico estilizado utilizando líneas rectas. La propuesta busca transmitir modernidad y alta adaptabilidad, definiendo versiones vertical, horizontal, color corporativo, positivo y negativo para su aplicación en distintos soportes físicos y digitales.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
 <Formulario />
