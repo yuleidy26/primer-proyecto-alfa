@@ -2,40 +2,12 @@
     import favicon from '#lib/assets/favicon.svg';
     import Icon from "@iconify/svelte";
     import "../app.css";
-    import { onMount } from 'svelte';
-    
     let { children } = $props();
-
-    // Estado para controlar si la página sigue cargando
-    let isLoading = $state(true);
-
-    onMount(() => {
-        // Si la página ya cargó por completo
-        if (document.readyState === 'complete') {
-            isLoading = false;
-        } else {
-            // Esperar a que carguen todas las imágenes y recursos de la ventana
-            window.addEventListener('load', () => {
-                isLoading = false;
-            });
-        }
-    });
 </script>
 
 <svelte:head>
     <link rel="icon" href={favicon} />
 </svelte:head>
-
-{#if isLoading}
-    <!-- Pantalla de carga (Preloader) con la bolita/spinner -->
-    <div class="fixed inset-0 z-50 bg-[#EBF3FF] flex flex-col items-center justify-center transition-opacity duration-500">
-        <div class="flex flex-col items-center gap-4">
-            <!-- Bolita / Spinner animado -->
-            <div class="w-10 h-10 border-4 border-slate-300 border-t-[#0039C6] rounded-full animate-spin"></div>
-            <p class="uppercase font-plusjack text-xs tracking-widest text-[#0039C6] font-bold">Cargando Portafolio...</p>
-        </div>
-    </div>
-{/if}
 
 <header class="flex justify-between px-10 py-5 sticky top-0 bg-white/80 backdrop-blur-md z-50">
     <div>
