@@ -1,13 +1,12 @@
 <script lang="ts">
-	import favicon from '#lib/assets/favicon.svg';
-import Icon from "@iconify/svelte";
-import "../app.css";
-	let { children } = $props();
-    
+    import favicon from '#lib/assets/favicon.svg';
+    import Icon from "@iconify/svelte";
+    import "../app.css";
+    let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+    <link rel="icon" href={favicon} />
 </svelte:head>
 
 <header class="flex justify-between px-10 py-5">
@@ -49,15 +48,14 @@ import "../app.css";
         <div class="text-xs font-plusjack font-light">©2026 Yuleidy Amaya. Todos los derechos reservados.</div>
 
         <div class="flex items-center gap-4">
-            <a href="https://www.instagram.com/artby_yul/">
+            <a href="https://www.instagram.com/artby_yul/" target="_blank" rel="noopener noreferrer">
                 <Icon icon="akar-icons:instagram-fill" width="32" />
             </a>
-            <a href="https://www.behance.net/yuleidyamaya">
+            <a href="https://www.behance.net/yuleidyamaya" target="_blank" rel="noopener noreferrer">
                 <Icon icon="akar-icons:behance-fill" width="32" />
             </a>
-            <a href="https://wa.me/1234567890">
+            <a href="https://wa.me/584129293832" target="_blank" rel="noopener noreferrer">
                 <Icon icon="akar-icons:whatsapp-fill" width="32" />
-
             </a>
         </div>
     </div>

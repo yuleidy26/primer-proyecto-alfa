@@ -1,5 +1,6 @@
 <script>
   import { enhance } from '$app/forms';
+  import Icon from "@iconify/svelte";
 
   let enviado = $state(false);
   /** @type {string[]} */
@@ -60,14 +61,14 @@
         Desde identidades visuales memorables hasta sistemas de redes sociales y publicaciones editoriales. Cuéntame sobre tu próximo proyecto.
       </p>
 
-      <!-- Tarjetas de contacto de la izquierda -->
+      <!-- Tarjetas de contacto de la izquierda con Iconify -->
       <div class="flex flex-col gap-4 font-plusjack">
         
         <!-- Correo -->
         <a href="mailto:yuleidyamaya2026@gmail.com" class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between hover:border-[#0039C6] transition group">
           <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center font-bold text-sm">
-              ✉
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
+              <Icon icon="akar-icons:envelope" width="20" />
             </div>
             <div>
               <span class="font-bold text-[10px] uppercase tracking-wider text-[#0039C6] block mb-0.5">Correo electrónico</span>
@@ -80,8 +81,8 @@
         <!-- Teléfono / WhatsApp -->
         <a href="https://wa.me/584129293832" target="_blank" rel="noopener noreferrer" class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between hover:border-[#0039C6] transition group">
           <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center font-bold text-sm">
-              📞
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
+              <Icon icon="akar-icons:whatsapp-fill" width="20" />
             </div>
             <div>
               <span class="font-bold text-[10px] uppercase tracking-wider text-[#0039C6] block mb-0.5">Teléfono / WhatsApp</span>
@@ -94,8 +95,8 @@
         <!-- Instagram -->
         <a href="https://www.instagram.com/artby_yul/" target="_blank" rel="noopener noreferrer" class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between hover:border-[#0039C6] transition group">
           <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center font-bold text-xs">
-              IG
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
+              <Icon icon="akar-icons:instagram-fill" width="20" />
             </div>
             <div>
               <span class="font-bold text-[10px] uppercase tracking-wider text-[#0039C6] block mb-0.5">Instagram</span>
@@ -108,8 +109,8 @@
         <!-- Ubicación -->
         <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between">
           <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center font-bold text-sm">
-              📍
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
+              <Icon icon="akar-icons:location" width="20" />
             </div>
             <div>
               <span class="font-bold text-[10px] uppercase tracking-wider text-[#0039C6] block mb-0.5">Ubicación</span>
