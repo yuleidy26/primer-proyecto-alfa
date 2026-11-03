@@ -404,11 +404,11 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     </div>
   </div>
 
-  <!-- Contenedor principal de la sección (Grid de 12 columnas) -->
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+  <!-- Contenedor principal de la sección (Grid de 12 columnas con items-stretch para igualar alturas) -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
     
-    <!-- Columna Izquierda: Tarjeta grande con la representación topológica (Ocupa 7 columnas) -->
-    <div class="lg:col-span-7 bg-white p-6 md:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+    <!-- Columna Izquierda: Tarjeta del conejo (Se estira para coincidir exactamente con la altura de la derecha) -->
+    <div class="lg:col-span-7 bg-white p-6 md:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between h-full">
       <div>
         <!-- Subtítulo de la tarjeta superior -->
         <div class="flex justify-between items-center pb-4 border-b border-slate-100 mb-6 font-plusjack">
@@ -420,8 +420,8 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
           </span>
         </div>
 
-        <!-- ESPACIO PARA LA FOTO IZQUIERDA -->
-        <div class="w-full flex items-center justify-center my-4">
+        <!-- FOTO IZQUIERDA -->
+        <div class="w-full flex items-center justify-center my-6">
           <img 
             src="Vectorización-Conejo_Mesa-de-trabajo-1.webp" 
             alt="Representación topológica de la liebre - Veltrix" 
@@ -438,20 +438,19 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       </div>
     </div>
 
-    <!-- Columna Derecha: Imagen superior de gorra + Tarjeta de información (Ocupa 5 columnas) -->
+    <!-- Columna Derecha: Gorra y Tarjeta de información (Definen la altura de la sección) -->
     <div class="lg:col-span-5 flex flex-col gap-6">
       
       <!-- Contenedor de la foto de la gorra -->
-      <div class="bg-white p-4 border border-slate-200/80 shadow-sm">
-        <!-- ESPACIO PARA LA FOTO DE LA GORRA -->
+      <div class="bg-white border border-slate-200/80 shadow-sm overflow-hidden w-full h-[260px] sm:h-[300px]">
         <img 
           src="Yuleidy-Amaya-Mockup_1.webp" 
           alt="Aplicación de marca en gorra Veltrix" 
-          class="w-full h-[240px] sm:h-[280px] object-cover object-center"
+          class="w-full h-full object-cover object-center"
         >
       </div>
 
-      <!-- Tarjeta 02 / Reducción al esencial (Puntas cuadradas) -->
+      <!-- Tarjeta 02 / Reducción al esencial -->
       <div class="bg-white p-6 md:p-8 border border-slate-200/80 shadow-xs flex flex-col gap-3">
         <p class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
           REDUCCIÓN AL ESENCIAL
