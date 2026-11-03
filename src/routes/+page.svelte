@@ -287,4 +287,97 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
 </section>
 
+<!-- Proyecto 2: Notion — Caso de Estudio -->
+<section class="bg-[#F3F4F6] text-slate-900 px-6 md:px-12 py-20 md:py-24">
+
+  <!-- Encabezado superior -->
+  <div class="flex flex-col lg:flex-row justify-between items-start mb-16 gap-6">
+    <!-- Título principal -->
+    <div>
+      <div class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider mb-3">
+        <p>PROYECTO 02 / CASO DE ESTUDIO CONCEPTUAL</p>
+      </div>
+      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
+        NOTION — Caso de  Estudio: Papelería <br> Corporativa
+      </h1>
+    </div>
+
+    <!-- Metadatos académicos (derecha) -->
+    <div class="text-xs font-plusjack text-right flex flex-col lg:items-end">
+      <p class="text-[#645D58] font-bold mb-1 uppercase tracking-wider">PROYECTO ACADÉMICO</p>
+      <p class="text-[#1B1B1F] font-medium max-w-[260px] leading-relaxed">
+        Extensión de Marca • Sistema de Papelería • Medios Impresos
+      </p>
+    </div>
+  </div>
+
+  <!-- Contenedor principal de la sección (Grid de 12 columnas) -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+    
+    <!-- Columna Izquierda: Imagen principal grande (Ocupa 7 columnas) -->
+    <div class="lg:col-span-7 flex flex-col gap-6">
+      <div class="relative w-full rounded-xl overflow-hidden shadow-md bg-white">
+        
+        <!-- ESPACIO PARA LA FOTO PRINCIPAL: Cambia 'ruta-de-tu-imagen.webp' por tu archivo -->
+        <img 
+          src="Papelería-minimalista-de-Notion-sobre-madera.webp" 
+          alt="Notion - Caso de Estudio Papelería Corporativa" 
+          class="w-full h-[380px] sm:h-[460px] md:h-[520px] object-cover object-center"
+        >
+
+        <!-- Etiqueta flotante inferior izquierda dentro de la foto -->
+        <div class="absolute bottom-6 left-6 bg-[#1B1B1F]/90 backdrop-blur-xs text-white px-4 py-2 text-[11px] font-plusjack uppercase tracking-widest font-semibold rounded-xs">
+          SET CORPORATIVO COMPLETO
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna Derecha: Tarjetas y Objetivo del caso (Ocupa 5 columnas) -->
+    <div class="lg:col-span-5 flex flex-col gap-6">
+      
+      <!-- Tarjeta 01 -->
+      <div class="bg-white p-6 md:p-8 rounded-xl border border-slate-200/80 shadow-xs flex flex-col gap-3">
+        <p class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
+          01 / TARJETAS DE PRESENTACIÓN
+        </p>
+        <h2 class="text-[#1B1B1F] font-playfair text-2xl md:text-3xl font-normal leading-snug">
+          Diagramación & Jerarquía Tipográfica
+        </h2>
+        <p class="font-plusjack text-sm text-[#4A4542] leading-relaxed">
+          Aplicación de la identidad visual de Notion en formato reducido. Se trabajó con una estructura reticular limpia y jerarquía tipográfica rigurosa para optimizar la legibilidad y mantener el estilo minimalista de la marca.
+        </p>
+      </div>
+
+      <!-- Tarjeta 02 -->
+      <div class="bg-white p-6 md:p-8 rounded-xl border border-slate-200/80 shadow-xs flex flex-col gap-3">
+        <p class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">
+          02 / SISTEMA DE PAPELERÍA
+        </p>
+        <h2 class="text-[#1B1B1F] font-playfair text-2xl md:text-3xl font-normal leading-snug">
+          Coherencia de Marca
+        </h2>
+        <p class="font-plusjack text-sm text-[#4A4542] leading-relaxed">
+          Diseño de carpeta corporativa y hojas membretadas respetando la línea gráfica oficial de Notion. Enfocado en la consistencia del sistema visual y la correcta preparación de archivos para impresión digital.
+        </p>
+      </div>
+
+      <!-- Texto inferior: Objetivo del caso -->
+      <div class="pt-2 font-plusjack">
+        <p class="text-xs font-bold uppercase tracking-wider text-[#1B1B1F] mb-1">
+          OBJETIVO DEL CASO:
+        </p>
+        <p class="text-xs sm:text-sm text-[#4A4542] leading-relaxed">
+          Ejercicio práctico orientado a aplicar y adaptar la identidad visual de Notion a soportes físicos (tarjetas de presentación, carpeta y hoja membretada), garantizando coherencia visual y precisión en la diagramación.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
 <Formulario />
