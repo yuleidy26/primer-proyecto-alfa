@@ -419,9 +419,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
           <span class="text-[11px] uppercase font-bold tracking-widest text-[#0039C6]">
             REPRESENTACIÓN TOPOLÓGICA DE LA LIEBRE
           </span>
-          <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-            TOLERANCIA 0.05 MM
-          </span>
+         
 
         </div>
 
@@ -449,7 +447,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       <!-- Contenedor de la foto de la gorra -->
       <div class="bg-white border border-slate-200/80 shadow-sm overflow-hidden w-full h-[260px] sm:h-[300px] rounded-lg">
         <img 
-          src="Yuleidy-Amaya-Mockup_1.webp" 
+          src="gorrac.webp" 
           alt="Aplicación de marca en gorra Veltrix" 
           class="w-full h-full object-cover object-center rounded-lg"
         >
