@@ -210,7 +210,7 @@
     <div class="text-xs font-plusjack text-left lg:text-right flex flex-col items-start lg:items-end">
       <p class="text-[#645D58] font-bold mb-1 uppercase tracking-wider">ENTORNO: ADOBE ILLUSTRATOR</p>
       <p class="text-[#1B1B1F] font-medium max-w-[260px] leading-relaxed">
-        Bocetaje Manual • Síntesis Vectorial • Retícula • Biomórfica
+        Bocetaje Manual • Síntesis Vectorial 
       </p>
     </div>
   </div>
