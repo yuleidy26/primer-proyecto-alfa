@@ -234,7 +234,7 @@
         <div class="w-full flex-1 flex items-center justify-center my-4">
           <img 
             src="Vectorización-Conejo_Mesa-de-trabajo-1.webp" 
-            alt="Representación topológica de la liebre - Veltrix" 
+            alt="Representación topológica de un conejo - Veltrix" 
             class="w-full h-auto max-h-[460px] object-contain rounded-lg"
           >
         </div>
