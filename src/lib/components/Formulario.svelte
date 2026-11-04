@@ -47,7 +47,7 @@ const manejarEnvio = () => {
 };
 </script>
 
-<section id="CONTACTO" class="formulario bg-white text-slate-900 px-6 md:px-12 py-20">
+<section id="CONTACTO" class="formulario bg-white text-slate-900 px-5 sm:px-8 lg:px-12 py-16 md:py-20">
   <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
     <!-- Columna Izquierda: Títulos y Tarjetas de Contacto -->
@@ -57,9 +57,9 @@ const manejarEnvio = () => {
           <div class="w-8 h-[2px] bg-[#0039C6]"></div>
           <p class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider">CONTACTO</p>
         </div>
-        <h2 class="text-4xl md:text-5xl font-playfair font-semibold leading-tight text-slate-900">
-          ¿Tienes una visión<br> en mente?<br>
-          Creemos algo <span class="text-[#0039C6] italic">extraordinario</span><br> juntos.
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-playfair font-semibold leading-tight text-slate-900">
+          ¿Tienes una visión<br class="hidden sm:block"> en mente?<br class="hidden sm:block">
+          Creemos algo <span class="text-[#0039C6] italic">extraordinario</span><br class="hidden sm:block"> juntos.
         </h2>
       </div>
 
@@ -71,56 +71,56 @@ const manejarEnvio = () => {
       <div class="flex flex-col gap-4 font-plusjack">
         
         <!-- Correo -->
-        <a href="mailto:yuleidyamaya2026@gmail.com" class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between hover:border-[#0039C6] transition group">
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
+        <a href="mailto:yuleidyamaya2026@gmail.com" class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between gap-3 hover:border-[#0039C6] transition group">
+          <div class="flex items-center gap-4 min-w-0">
+            <div class="w-10 h-10 shrink-0 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
               <Icon icon="akar-icons:envelope" width="20" />
             </div>
-            <div>
+            <div class="min-w-0">
               <span class="font-bold text-[10px] uppercase tracking-wider text-[#0039C6] block mb-0.5">Correo electrónico</span>
-              <span class="text-sm font-medium text-slate-800">yuleidyamaya2026@gmail.com</span>
+              <span class="text-sm font-medium text-slate-800 break-all">yuleidyamaya2026@gmail.com</span>
             </div>
           </div>
-          <span class="text-slate-400 group-hover:text-[#0039C6] group-hover:translate-x-1 transition">→</span>
+          <span class="text-slate-400 shrink-0 group-hover:text-[#0039C6] group-hover:translate-x-1 transition">→</span>
         </a>
 
         <!-- Teléfono / WhatsApp -->
-        <a href="https://wa.me/584129293832" target="_blank" rel="noopener noreferrer" class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between hover:border-[#0039C6] transition group">
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
+        <a href="https://wa.me/584129293832" target="_blank" rel="noopener noreferrer" class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between gap-3 hover:border-[#0039C6] transition group">
+          <div class="flex items-center gap-4 min-w-0">
+            <div class="w-10 h-10 shrink-0 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
               <Icon icon="akar-icons:whatsapp-fill" width="20" />
             </div>
-            <div>
+            <div class="min-w-0">
               <span class="font-bold text-[10px] uppercase tracking-wider text-[#0039C6] block mb-0.5">Teléfono / WhatsApp</span>
-              <span class="text-sm font-medium text-slate-800">+58 412-9293832</span>
+              <span class="text-sm font-medium text-slate-800 break-words">+58 412-9293832</span>
             </div>
           </div>
-          <span class="text-slate-400 group-hover:text-[#0039C6] group-hover:translate-x-1 transition">→</span>
+          <span class="text-slate-400 shrink-0 group-hover:text-[#0039C6] group-hover:translate-x-1 transition">→</span>
         </a>
 
         <!-- Instagram -->
-        <a href="https://www.instagram.com/artby_yul/" target="_blank" rel="noopener noreferrer" class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between hover:border-[#0039C6] transition group">
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
+        <a href="https://www.instagram.com/artby_yul/" target="_blank" rel="noopener noreferrer" class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between gap-3 hover:border-[#0039C6] transition group">
+          <div class="flex items-center gap-4 min-w-0">
+            <div class="w-10 h-10 shrink-0 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
               <Icon icon="akar-icons:instagram-fill" width="20" />
             </div>
-            <div>
+            <div class="min-w-0">
               <span class="font-bold text-[10px] uppercase tracking-wider text-[#0039C6] block mb-0.5">Instagram</span>
-              <span class="text-sm font-medium text-slate-800">@artby_yul</span>
+              <span class="text-sm font-medium text-slate-800 break-words">@artby_yul</span>
             </div>
           </div>
-          <span class="text-slate-400 group-hover:text-[#0039C6] group-hover:translate-x-1 transition">→</span>
+          <span class="text-slate-400 shrink-0 group-hover:text-[#0039C6] group-hover:translate-x-1 transition">→</span>
         </a>
 
         <!-- Ubicación -->
-        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between">
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between gap-3">
+          <div class="flex items-center gap-4 min-w-0">
+            <div class="w-10 h-10 shrink-0 rounded-lg bg-blue-50 text-[#0039C6] flex items-center justify-center">
               <Icon icon="akar-icons:location" width="20" />
             </div>
-            <div>
+            <div class="min-w-0">
               <span class="font-bold text-[10px] uppercase tracking-wider text-[#0039C6] block mb-0.5">Ubicación</span>
-              <span class="text-sm font-medium text-slate-800 block">Valencia, Carabobo, Venezuela</span>
+              <span class="text-sm font-medium text-slate-800 block break-words">Valencia, Carabobo, Venezuela</span>
               <span class="text-xs text-slate-500">Disponible para proyectos presenciales y remotos</span>
             </div>
           </div>
@@ -133,7 +133,7 @@ const manejarEnvio = () => {
     <div class="lg:col-span-7 flex flex-col gap-6">
       
       <!-- Cabecera interna libre -->
-      <div class="flex justify-between items-center pb-4 border-b border-slate-100 font-plusjack">
+      <div class="flex flex-wrap justify-between items-center gap-3 pb-4 border-b border-slate-100 font-plusjack">
         <span class="text-xs uppercase font-bold tracking-widest text-[#0039C6]">Hablemos</span>
         <span class="text-[10px] font-bold uppercase tracking-wider text-[#0039C6] bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-100">
           Respuesta en 24 h
@@ -275,7 +275,7 @@ const manejarEnvio = () => {
           <div class="flex justify-end mt-2">
             <button
               type="submit"
-              class="inline-flex items-center gap-2 bg-[#0039C6] text-white px-8 py-4 rounded-lg font-plusjack font-bold text-xs uppercase tracking-wider hover:bg-blue-800 transition shadow-sm"
+              class="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-[#0039C6] text-white px-8 py-4 rounded-lg font-plusjack font-bold text-xs uppercase tracking-wider hover:bg-blue-800 transition shadow-sm"
             >
               Enviar mensaje <span class="text-base">→</span>
             </button>

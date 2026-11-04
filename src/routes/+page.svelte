@@ -20,7 +20,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 </script>
 
 
-<section  id="INICIO"  class="relative bg-blue-600 text-white px-12 py-12 min-h-[85vh] flex flex-col justify-between overflow-hidden">
+<section  id="INICIO"  class="relative bg-blue-600 text-white px-5 sm:px-8 lg:px-12 py-10 md:py-12 min-h-[85vh] flex flex-col justify-between overflow-hidden">
 
 <!-- Texto Gigante de Fondo (Marca de Agua) -->
   <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0">
@@ -34,11 +34,11 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     </div>
 
   <!-- Bloque Central (3 Columnas) -->
-  <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-8 my-auto z-10">
+  <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-8 md:gap-6 my-auto z-10">
     
     <!-- Columna 1: Título y Bajada -->
     <div class="flex flex-col gap-4">
-      <h1 class="text-4xl lg:text-5xl font-playfair font-normal leading-tight">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-playfair font-normal leading-tight">
         Diseño Gráfico e Identidad Visual
       </h1>
       <p class="text-xs font-plusjack font-light max-w-sm leading-relaxed text-blue-100">
@@ -48,7 +48,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
        <div class="flex justify-center">
 
-      <div class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden bg-white flex items-center justify-center shadow-lg">
+      <div class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full overflow-hidden bg-white flex items-center justify-center shadow-lg">
 
         <img src="/logo.webp" alt="Avatar de Yuleidy Amaya" class="w-full h-full object-cover" />
 
@@ -56,7 +56,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
     </div>
 
-        <div class="flex-1 text-8xl text-right font-playfair font-bold">
+        <div class="flex-1 text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-right font-playfair font-bold">
             <p>YULEIDY <br> AMAYA</p>
         </div>
 
@@ -71,20 +71,20 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 </section>
 
 <!-- Sección Sobre Mí -->
-<section  id="SOBRE-MI"  class="bg-[#FCF8FE] text-slate-900 px-12 py-24">
+<section  id="SOBRE-MI"  class="bg-[#FCF8FE] text-slate-900 px-5 sm:px-8 lg:px-12 py-16 md:py-24">
     <!-- Cuadro superior naranja -->
      <div class="max-w-5xl flex flex-col gap-6 ">
 
        <div class="text-[#0039C6] font-plusjack font-bold text-xs tracking-wider"> SOBRE MÍ</div>
 
        <!-- Título Principal -->
-    <h2 class="text-5xl lg:text-6xl font-playfair font-semibold leading-tight">
-      Filosofía de Diseño & <span class="text-[#0039C6] italic">Enfoque</span><br> de Marca
+    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-semibold leading-tight">
+      Filosofía de Diseño & <span class="text-[#0039C6] italic">Enfoque</span><br class="hidden md:block"> de Marca
     </h2>
 
        <div class="font-plusjack leading-relaxed text-[#434656] text-sm md:text-base max-w-3xl">
-         <p>Me apasiona el diseño de identidades visuales, buscando siempre el equilibrio entre lo funcional y <br>
-            lo creativo. Mi objetivo es transformar conceptos en piezas gráficas estratégicas que potencien la <br>
+         <p>Me apasiona el diseño de identidades visuales, buscando siempre el equilibrio entre lo funcional y <br class="hidden md:block">
+            lo creativo. Mi objetivo es transformar conceptos en piezas gráficas estratégicas que potencien la <br class="hidden md:block">
             presencia de una marca tanto en plataformas digitales como en medios impresos tradicionales.</p>
          </div>
 
@@ -211,29 +211,29 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
 
 <!-- Proyecto 1 -->
-<section  id="PROYECTOS"  class="bg-[#FFF4ED] text-slate-900 px-12 py-24">
+<section  id="PROYECTOS"  class="bg-[#FFF4ED] text-slate-900 px-5 sm:px-8 lg:px-12 py-16 md:py-24">
 
   <!-- Encabezado superior -->
-  <div class="flex justify-between items-start mb-16">
+  <div class="flex flex-col sm:flex-row justify-between items-start gap-6 mb-10 md:mb-16">
     <!-- Título principal -->
     <div>
       <div class="uppercase text-[#B34700] font-bold text-xs tracking-wider mb-2">
         <p>PROYECTO 01 / IDENTIDAD CORPORATIVA & AUDIOVISUAL</p>
       </div>
-      <div class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
-        <h1>GUAO — Lenguaje  Dinámico <br> & Audiovisual</h1>
+      <div class="text-[#1B1B1F] font-playfair font-semibold text-3xl sm:text-4xl lg:text-6xl leading-[1.1]">
+        <h1>GUAO — Lenguaje  Dinámico <br class="hidden sm:block"> & Audiovisual</h1>
       </div>
     </div>
 
     <!-- Metadatos de entrega -->
-    <div class="text-xs text-right flex flex-col items-end">
+    <div class="text-xs text-left sm:text-right flex flex-col items-start sm:items-end">
       <p class="text-[#645D58] font-bold mb-1">ENTREGA: 2026</p>
       <p class="text-[#1B1B1F] font-medium max-w-[220px]">Isotipo • Logotipo • Paleta Cromática • Aplicaciones de Marca</p>
     </div>
   </div>
 
   <!-- Contenedor principal de contenido (Tarjeta blanca) -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white p-8 md:p-12 shadow-sm items-center mb-10">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 bg-white p-5 sm:p-8 md:p-12 shadow-sm items-center mb-10">
     
     <!-- Columna izquierda: Laptop con marco de ventana y los 3 puntos -->
     <div class="w-full rounded-lg overflow-hidden shadow-lg bg-[#111111]">
@@ -251,7 +251,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
     <div class="flex flex-col gap-5">
       <p class="uppercase text-[#B34700] font-bold text-xs tracking-wider">IDENTIDAD & PROPÓSITO DE MARCA</p>
 
-      <h2 class="text-[#1B1B1F] font-playfair text-3xl md:text-4xl leading-snug font-normal">
+      <h2 class="text-[#1B1B1F] font-playfair text-2xl sm:text-3xl md:text-4xl leading-snug font-normal">
         La identidad de Guao nace del dinamismo, la creatividad y las ganas de conectar.
       </h2>
 
@@ -265,10 +265,10 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
       <!-- Paleta de colores simétrica en 4 columnas con sus textos -->
       <div class="grid grid-cols-4 w-full h-12 rounded-lg overflow-hidden border border-slate-200 shadow-sm">
-        <div class="bg-[#FF5500] flex items-center justify-center text-[10px] text-white font-mono font-bold">#FF5500</div>
-        <div class="bg-[#F7E9C3] flex items-center justify-center text-[10px] text-[#645D58] font-mono font-bold">#F7E9C3</div>
-        <div class="bg-white flex items-center justify-center text-[10px] text-slate-400 font-mono font-bold border-x border-slate-200">#FFFFFF</div>
-        <div class="bg-[#458FEA] flex items-center justify-center text-[10px] text-white font-mono font-bold">#458FEA</div>
+        <div class="bg-[#FF5500] flex items-center justify-center text-[8px] sm:text-[10px] text-white font-mono font-bold">#FF5500</div>
+        <div class="bg-[#F7E9C3] flex items-center justify-center text-[8px] sm:text-[10px] text-[#645D58] font-mono font-bold">#F7E9C3</div>
+        <div class="bg-white flex items-center justify-center text-[8px] sm:text-[10px] text-slate-400 font-mono font-bold border-x border-slate-200">#FFFFFF</div>
+        <div class="bg-[#458FEA] flex items-center justify-center text-[8px] sm:text-[10px] text-white font-mono font-bold">#458FEA</div>
       </div>
 
     </div>
@@ -276,7 +276,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   </div>
 
   <!-- Cuadro verde 3: Tarjetas dinámicas al final -->
- <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-8">
   {#each tarjetas as tarjeta}
     <div>
       <Tarjetainformacion
@@ -292,22 +292,22 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 </section>
 
 <!-- Proyecto 2: Notion — Caso de Estudio -->
-<section class="bg-[#F3F4F6] text-slate-900 px-6 md:px-12 py-20 md:py-24">
+<section class="bg-[#F3F4F6] text-slate-900 px-5 sm:px-8 lg:px-12 py-16 md:py-24">
 
   <!-- Encabezado superior -->
-  <div class="flex flex-col lg:flex-row justify-between items-start mb-16 gap-6">
+  <div class="flex flex-col lg:flex-row justify-between items-start mb-10 md:mb-16 gap-6">
     <!-- Título principal -->
     <div>
       <div class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider mb-3">
         <p>PROYECTO 02 / CASO DE ESTUDIO CONCEPTUAL</p>
       </div>
-      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
-        NOTION — Caso de Estudio: Papelería <br> Corporativa
+      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-3xl sm:text-4xl lg:text-6xl leading-[1.1]">
+        NOTION — Caso de Estudio: Papelería <br class="hidden sm:block"> Corporativa
       </h1>
     </div>
 
     <!-- Metadatos académicos (derecha) -->
-    <div class="text-xs font-plusjack text-right flex flex-col lg:items-end">
+    <div class="text-xs font-plusjack text-left lg:text-right flex flex-col items-start lg:items-end">
       <p class="text-[#645D58] font-bold mb-1 uppercase tracking-wider">PROYECTO ACADÉMICO</p>
       <p class="text-[#1B1B1F] font-medium max-w-[260px] leading-relaxed">
         Extensión de Marca • Sistema de Papelería • Medios Impresos
@@ -326,7 +326,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
         <img 
           src="Papelería-minimalista-de-Notion-sobre-madera.webp" 
           alt="Notion - Caso de Estudio Papelería Corporativa" 
-          class="w-full h-[380px] sm:h-[460px] md:h-[520px] object-cover object-center rounded-lg"
+          class="w-full h-[280px] sm:h-[460px] md:h-[520px] object-cover object-center rounded-lg"
         >
 
         <!-- Etiqueta flotante inferior izquierda dentro de la foto -->
@@ -385,22 +385,22 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 </section>
 
 <!-- Proyecto 3: Veltrix — Síntesis Geométrica & Imagotipo -->
-<section class="bg-[#EBF3FF] text-slate-900 px-6 md:px-12 py-20 md:py-24">
+<section class="bg-[#EBF3FF] text-slate-900 px-5 sm:px-8 lg:px-12 py-16 md:py-24">
 
   <!-- Encabezado superior -->
-  <div class="flex flex-col lg:flex-row justify-between items-start mb-16 gap-6">
+  <div class="flex flex-col lg:flex-row justify-between items-start mb-10 md:mb-16 gap-6">
     <!-- Título principal -->
     <div>
       <div class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider mb-3">
         <p>PROYECTO 03 / VECTORIZACIÓN & SÍNTESIS GRÁFICA</p>
       </div>
-      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
-        VELTRIX — Síntesis  Geométrica <br> & Imagotipo
+      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-3xl sm:text-4xl lg:text-6xl leading-[1.1]">
+        VELTRIX — Síntesis  Geométrica <br class="hidden sm:block"> & Imagotipo
       </h1>
     </div>
 
     <!-- Metadatos académicos (derecha) -->
-    <div class="text-xs font-plusjack text-right flex flex-col lg:items-end">
+    <div class="text-xs font-plusjack text-left lg:text-right flex flex-col items-start lg:items-end">
       <p class="text-[#645D58] font-bold mb-1 uppercase tracking-wider">ENTORNO: ADOBE ILLUSTRATOR</p>
       <p class="text-[#1B1B1F] font-medium max-w-[260px] leading-relaxed">
         Bocetaje Manual • Síntesis Vectorial • Retícula • Biomórfica
@@ -412,7 +412,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
     
     <!-- Columna Izquierda: Tarjeta del conejo (Imagen grande y centrada simétricamente) -->
-    <div class="lg:col-span-7 bg-white p-6 md:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between h-full">
+    <div class="lg:col-span-7 bg-white p-5 sm:p-6 md:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between h-full">
       <div>
         <!-- Subtítulo de la tarjeta superior -->
         <div class="flex justify-between items-center pb-4 border-b border-slate-100 mb-6 font-plusjack">
@@ -473,24 +473,24 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 </section>
 
 <!-- Proyecto 4: Publicidad Digital & Social Media -->
-<section class="bg-[#F9FAFB] text-slate-900 px-6 md:px-12 py-20 md:py-24">
+<section class="bg-[#F9FAFB] text-slate-900 px-5 sm:px-8 lg:px-12 py-16 md:py-24">
 
   <!-- Encabezado superior -->
-  <div class="flex flex-col lg:flex-row justify-between items-start mb-16 gap-6">
+  <div class="flex flex-col lg:flex-row justify-between items-start mb-10 md:mb-16 gap-6">
     <!-- Título principal -->
     <div>
       <div class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider mb-3">
         <p>PROYECTO 04 / PUBLICIDAD DIGITAL & SOCIAL MEDIA</p>
       </div>
-      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
+      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-3xl sm:text-4xl lg:text-6xl leading-[1.1]">
         Publicidad Digital — 
-        Piezas Comerciales <br> & 
+        Piezas Comerciales <br class="hidden sm:block"> & 
         Redes Sociales
       </h1>
     </div>
 
     <!-- Metadatos académicos / formatos (derecha) -->
-    <div class="text-xs font-plusjack text-right flex flex-col lg:items-end">
+    <div class="text-xs font-plusjack text-left lg:text-right flex flex-col items-start lg:items-end">
       <p class="text-[#645D58] font-bold mb-1 uppercase tracking-wider">FORMATOS: FEED 1:1 & STORIES 9:16</p>
       <p class="text-[#1B1B1F] font-medium max-w-[260px] leading-relaxed">
         CAMPAÑAS: Sony Audio & Guao Creativo
@@ -598,23 +598,23 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 </section>
 
 <!-- Proyecto 5: VOGUE — Caso de Estudio: Portada Editorial -->
-<section class="bg-[#EBF3FF] text-slate-900 px-6 md:px-12 py-20 md:py-24">
+<section class="bg-[#EBF3FF] text-slate-900 px-5 sm:px-8 lg:px-12 py-16 md:py-24">
 
   <!-- Encabezado superior -->
-  <div class="flex flex-col lg:flex-row justify-between items-start mb-16 gap-6">
+  <div class="flex flex-col lg:flex-row justify-between items-start mb-10 md:mb-16 gap-6">
     <!-- Título principal -->
     <div>
       <div class="uppercase text-[#0039C6] font-plusjack font-bold text-xs tracking-wider mb-3">
         <p>PROYECTO 05 / DIRECCIÓN DE ARTE EDITORIAL</p>
       </div>
-      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">
-        VOGUE — Caso de <br>
+      <h1 class="text-[#1B1B1F] font-playfair font-semibold text-3xl sm:text-4xl lg:text-6xl leading-[1.1]">
+        VOGUE — Caso de <br class="hidden sm:block">
         Estudio: Portada Editorial
       </h1>
     </div>
 
     <!-- Metadatos académicos (derecha) -->
-    <div class="text-xs font-plusjack text-right flex flex-col lg:items-end">
+    <div class="text-xs font-plusjack text-left lg:text-right flex flex-col items-start lg:items-end">
       <p class="text-[#645D58] font-bold mb-1 uppercase tracking-wider">PROYECTO ACADÉMICO</p>
       <p class="text-[#1B1B1F] font-medium max-w-[260px] leading-relaxed">
         Diseño Editorial & Dirección de Arte

@@ -2,7 +2,7 @@
   let { subtitulo, titulo, descripcion, imagen } = $props();
 </script>
 
-<div class="bg-white p-6 md:p-8 shadow-sm flex flex-col justify-between h-full rounded-sm">
+<div class="bg-white p-5 sm:p-6 md:p-8 shadow-sm flex flex-col justify-between h-full rounded-sm">
   
   <div class="flex flex-col gap-3">
     {#if subtitulo}
@@ -11,12 +11,12 @@
       </p>
     {/if}
 
-    <h2 class="text-[#1B1B1F] font-playfair text-2xl md:text-3xl font-normal leading-snug">
+    <h2 class="text-[#1B1B1F] font-playfair text-xl sm:text-2xl md:text-3xl font-normal leading-snug break-words">
       {titulo}
     </h2>
 
     <!-- Contenedor con una altura grande e igual para ambas tarjetas -->
-    <div class="w-full h-[260px] sm:h-[320px] md:h-[360px] overflow-hidden rounded-xl my-3">
+    <div class="w-full h-[220px] sm:h-[320px] md:h-[360px] overflow-hidden rounded-xl my-3">
       <img 
         src={imagen} 
         alt={titulo} 
@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <p class="text-[#4A4542] font-plusjack text-xs md:text-sm leading-relaxed mt-2">
+  <p class="text-[#4A4542] font-plusjack text-xs md:text-sm leading-relaxed mt-2 break-words">
     {descripcion}
   </p>
 
