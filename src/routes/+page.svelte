@@ -181,7 +181,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
 
                   <div> 
                     <p class="font-semibold text-sm">Técnicas de Ilustración</p>
-                    <p class="text-xs text-slate-500 font-plusjack">INSTITUTO ALFA CARABOBO</p>
+                    <p class="text-xs text-slate-500 font-plusjack">ACADEMIA LÚMINA</p>
                   </div>
                     <span class="text-xs font-bold text-blue-600">2026</span>
                 </div>
