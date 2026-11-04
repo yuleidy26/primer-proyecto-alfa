@@ -50,9 +50,9 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       </div>
     </div>
 
-    <!-- Columna de Título y Bajada (En celular va debajo del logo, en PC a la izquierda) -->
+    <!-- Columna de Título y Bajada (En celular va debajo del logo con tamaño reducido) -->
     <div class="flex flex-col gap-4 text-center lg:text-left order-3 lg:order-1">
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-playfair font-normal leading-tight">
+      <h1 class="text-2xl sm:text-4xl lg:text-5xl font-playfair font-normal leading-tight">
         Diseño Gráfico e Identidad Visual
       </h1>
       <p class="text-xs font-plusjack font-light max-w-sm mx-auto lg:mx-0 leading-relaxed text-blue-100">
@@ -70,7 +70,6 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
   </div>
 
 </section>
-
 <!-- Sección Sobre Mí -->
 <section  id="SOBRE-MI"  class="bg-[#FCF8FE] text-slate-900 px-5 sm:px-8 lg:px-12 py-16 md:py-24">
     <!-- Cuadro superior naranja -->
