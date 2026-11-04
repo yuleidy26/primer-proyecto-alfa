@@ -224,7 +224,7 @@
         <!-- Subtítulo de la tarjeta superior -->
         <div class="flex justify-between items-center pb-4 border-b border-slate-100 mb-6 font-plusjack">
           <span class="text-[11px] uppercase font-bold tracking-widest text-[#0039C6]">
-            REPRESENTACIÓN TOPOLÓGICA DE LA LIEBRE
+            REPRESENTACIÓN TOPOLÓGICA DE UN CONEJO
           </span>
          
 
