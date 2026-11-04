@@ -8,13 +8,13 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       subtitulo: "SISTEMA VISUAL",
       titulo: 'Versiones & Adaptabilidad',
       descripcion: 'Desarrollo del logotipo y sus variantes cromáticas para garantizar una presencia visual limpia y funcional. El diseño está optimizado para adaptarse con claridad a formatos cuadrados de redes sociales, fotos de perfil y piezas promocionales impresas.',
-      imagen: '/guao.webp'
+      imagen: '/GUAOptimizado.webp'
     },
     {
       subtitulo: "APLICACIÓN REAL DE MARCA",
       titulo: 'Merchandising & Material Publicitario',
       descripcion: 'Aplicación de la identidad gráfica en artículos corporativos y prendas de vestir (bordado de marca en gorra), demostrando la versatilidad de la paleta cromática naranja y el isotipo en medios físicos táctiles.',
-      imagen: '/Yuleidy-Amaya-Mockup_.webp'
+      imagen: '/guaoptimizada.webp'
     }
   ];
 </script>
@@ -571,7 +571,7 @@ import Tarjetainformacion from '#lib/components/Tarjetainformacion.svelte';
       <div class="relative w-full max-w-[340px] mx-auto aspect-square bg-[#E5E7EB] overflow-hidden shadow-sm flex items-center justify-center p-3 rounded-lg">
         <!-- FOTO DE GUAO (Vertical completa sin estirar ni cortar) -->
         <img 
-          src="publicidad-guao_Mesa-de-trabajo-1.webp" 
+          src="publicidad-guaoptimizado.webp" 
           alt="Guao Post/Flyer" 
           class="h-full w-auto object-contain object-center shadow-xs rounded-lg"
         >
